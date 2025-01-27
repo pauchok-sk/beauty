@@ -1,0 +1,29 @@
+.contacts {
+  &Order {
+    background-color: var(--blue);
+    padding: 80px 60px;
+    @media(max-width: 991px){
+      padding: 40px;
+    }
+  }
+}
+
+.contactsOrderForm {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    @media(max-width: 991px){
+      column-gap: 0;
+
+      row-gap: 10px;
+    }
+  }
+
+  .inputW {
+    grid-column: 4 span;
+    @media(max-width: 991px){
+      grid-column: 12 span;
+    }
+  }
+}

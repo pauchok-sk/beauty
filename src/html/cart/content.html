@@ -1,0 +1,138 @@
+<section class="bg--gray sect checkout">
+  <div class="container">
+    <div class="sectHead mb-4">
+      <h2 class="h3 text--black text-uppercase text-center text-lg-start">
+        Оформление заказа
+      </h2>
+    </div>
+
+    <div class="cartBlock mb-4">
+      <h5 class="h5 fw-medium mb-3 pb-1 text--black text-uppercase text-center text-lg-start">
+        Способ доставки
+      </h5>
+      <div class="tabs cartTabs" data-tabs="popup">
+        <ul class="tabs__nav gap-1 gap-lg-2 p-2">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn px-3" type="button">Самовывоз</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn px-3" type="button">
+            <span class="d-none d-lg-block">Курьером по тарифам СДЭК</span>
+            <span class="d-block d-lg-none">Курьером СДЭК</span>
+            
+          </button>
+          </li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel pt-3 pt-lg-4 px-4">
+            Адрес точки самовывоза: Москва, Щелковское Шоссе 5 стр 1
+          </div>
+          <div class="tabs__panel pt-3 pt-lg-4">
+            <div class="row">
+              <div class="col-lg-4 mb-2 mb-lg-0">
+                <div class="inputW">
+                  <input type="text" class="formInput formInput--black" placeholder="Населённый пункт">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-2 mb-lg-0">
+                <div class="inputW">
+                  <input type="text" class="formInput formInput--black" placeholder="Улица и дом">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-2 mb-lg-0">
+                <div class="inputW">
+                  <input type="text" class="formInput formInput--black" placeholder="Квартира или офис">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="cartBlock mb-4">
+      <h5 class="h5 fw-medium mb-3 pb-1 text--black text-uppercase text-center text-lg-start">
+        Данные получателя
+      </h5>
+      <div class="row">
+        <div class="col-lg-4 mb-2 mb-lg-0">
+          <div class="inputW">
+            <input type="text" class="formInput formInput--black" placeholder="ФИО">
+          </div>
+        </div>
+        <div class="col-lg-4 mb-2 mb-lg-0">
+          <div class="inputW">
+            <input type="tel" class="formInput formInput--black" placeholder="+7(---)-------">
+          </div>
+        </div>
+        <div class="col-lg-4 mb-2 mb-lg-0">
+          <div class="inputW">
+            <input type="email" class="formInput formInput--black" placeholder="Email">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cartBlock">
+      <h5 class="h5 fw-medium mb-3 pb-1 text--black text-uppercase text-center text-lg-start">
+        Способ оплаты
+      </h5>
+      <div class="tabs cartTabs" data-tabs="popup_2">
+        <ul class="tabs__nav flex-wrap justify-content-center gap-1 gap-lg-2 p-2">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn px-3" type="button">Онлайн картой</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn px-3" type="button">Оплата по счету </button>
+          </li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel">
+
+          </div>
+          <div class="tabs__panel pt-4">
+            <div class="row">
+              <div class="mb-2 mb-xl-0 col-lg-6 col-xl-3">
+                <div class="inputW">
+                  <input type="text" class="formInput formInput--black" placeholder="ИНН">
+                </div>
+              </div>
+              <div class="mb-2 mb-xl-0 col-lg-6 col-xl-3">
+                <div class="inputW">
+                  <input type="tel" class="formInput formInput--black" placeholder="форма регистрации">
+                </div>
+              </div>
+              <div class="mb-2 mb-xl-0 col-lg-6 col-xl-3">
+                <div class="inputW">
+                  <input type="email" class="formInput formInput--black" placeholder="Наименование организации">
+                </div>
+              </div>
+              <div class="mb-2 mb-xl-0 col-lg-6 col-xl-3">
+                <div class="inputW">
+                  <input type="email" class="formInput formInput--black" placeholder="Квартира или офис">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="inputW mt-4">
+      <textarea name="cartText" id="cartText" cols="30" rows="10" class="formText formText--black"
+        placeholder="Комментарий к заказу"></textarea>
+    </div>
+    <div class="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-end mt-3 pt-1 pt-lg-0 mt-lg-5">
+      <div class="agreement">
+        <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+        <label class="checkboxLabel align-items-center" for="catalogGet_form">
+          <span class="rect rect--gray2 position-static"></span>
+          <div class="agreementText text--sm">
+            Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+          </div>
+
+        </label>
+      </div>
+      <button class="button button--blue button--sm-100 mt-2 mt-md-0">
+        Оплатить
+      </button>
+    </div>
+
+  </div>
+</section>

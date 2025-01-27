@@ -1,0 +1,73 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// fancybox
+@import './fancybox';
+
+// bootstrap v5.3.2
+@import "./bootstrap.min";
+
+// select2 
+@import "./select2.min";
+
+// air datepicker
+@import '../../node_modules/air-datepicker/air-datepicker';
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/breadcrumbs";
+@import "./components/tabs";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/main-cat";
+@import "./components/catalog";
+@import "./components/order";
+@import "./components/coop";
+@import "./components/reputation";
+@import "./components/video";
+@import "./components/partners";
+@import "./components/blog";
+@import "./components/adv";
+@import "./components/about";
+@import "./components/team";
+@import "./components/smi";
+@import "./components/product";
+@import "./components/reviews";
+@import "./components/cart";
+@import "./components/events";
+@import "./components/license";
+@import "./components/center";
+@import "./components/study";
+@import "./components/price";
+@import "./components/consult";
+@import "./components/steps";
+@import "./components/aparat";
+@import "./components/garanty";
+@import "./components/gal";
+@import "./components/cat";
+@import "./components/article";
+@import "./components/doc";
+@import "./components/contacts";
+@import "./components/req";
+@import "./components/office";
+@import "./components/result";
+@import "./components/widget";
+@import "./components/intro-lend";
+@import "./components/before-after";
+@import "./components/income";
+@import "./components/instruction";
+@import "./components/parameters";
+@import "./components/details";
+@import "./components/hair-removal";
+@import "./components/videos";
+
+@import "./components/footer";

@@ -1,0 +1,45 @@
+<section class="sect pt-4 pb-0 errorPage">
+  <div class="container">
+    <div class="mb-3 pb-1">
+      <h2 class="h2 text--white text-center fw-medium mb-0">
+        Страница не найдена
+      </h2>
+    </div>
+    <div class="mb-6 mb-6-sm-20">
+      <p class="text-center text--white">
+        Страница была удалена или перемещена.
+      </p>
+    </div>
+
+    <div class="searchW searchW--error d-flex justify-content-center mb-6 mb-6-sm-40">
+      <div class="searchInputW">
+        <input type="search" placeholder="Поиск">
+        <div class="searchAction d-flex align-items-center">
+          <button class="removeTextBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#remove"></use>
+            </svg>
+          </button>
+          <button class="removeSearchBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      <div class="searchSelect">
+        <select class="formSelect formSelect--border-l-none" name="searchSelect" id="searchSelect">
+          <option value="1">Везде</option>
+          <option value="2">Товары</option>
+          <option value="3">Мероприятия </option>
+          <option value="4">Блог </option>
+        </select>
+      </div>
+    </div>
+
+    <img src="@img/admin/404/404.png" alt="error" class="errorImg d-none d-sm-block">
+    <img src="@img/admin/404/404-sm.png" alt="error" class="errorImg d-block d-sm-none">
+
+  </div>
+</section>

@@ -1,0 +1,56 @@
+.team {
+  &Card {
+    &Img {
+      width: 326px;
+      height: 326px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      @media(max-width: 1400px){
+        height: 264px;
+      }
+      @media(max-width: 1199px){
+        height: 298px;
+      }
+      @media(max-width: 991px){
+        height: 326px;
+      }
+      @media(max-width: 767px){
+        height: 180px;
+        width: 180px;
+      }
+      @media(max-width: 420px){
+        width: 50vw;
+        height: 39vw;
+      }
+    }
+
+    &Title {
+      margin-top: 40px;
+      text-align: center;
+      @media(max-width: 767px){
+        margin-top: 16px;
+        font-weight: 400!important;
+      }
+    }
+
+    &Descr {
+      margin-top: 12px;
+      @media(max-width: 767px){
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.7px;
+
+      }
+    }
+  }
+  &Slider {
+    &-sm-pr {
+      @media(max-width: 575px){
+        padding-right: 20px;
+        overflow: visible;
+      }
+    }
+  }
+}

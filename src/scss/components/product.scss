@@ -1,0 +1,227 @@
+.product {
+  &Slider {
+    margin-bottom: 20px;
+    @media(max-width: 991px){
+      margin-bottom: 40px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 30px;
+      top: unset;
+      right: 30px;
+      width: fit-content;
+      left: unset;
+    }
+  }
+
+  &Slide {
+    &:hover {
+      img {
+        opacity: .8;
+      }
+    }
+
+    img {
+      height: 670px;
+      width: 100%;
+      object-fit: cover;
+      transition: opacity .2s linear;
+
+      @media(max-width: 1400px) {
+        height: 600px;
+      }
+      @media(max-width: 1199px){
+        height: 500px;
+      }
+      @media(max-width: 575px){
+        height: 85vw;
+      }
+    }
+  }
+
+  &Thumb {
+    &Slide {
+      cursor: pointer;
+
+      &:hover {
+        img {
+          opacity: .8;
+        }
+      }
+
+      img {
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        transition: opacity .2s linear;
+        @media(max-width: 1400px){
+          height: 180px;
+        }
+        @media(max-width: 1199px){
+          height: 150px;
+        }
+      }
+
+      &.swiper-slide-thumb-active {
+        opacity: .9;
+      }
+    }
+  }
+
+  &Content {
+    padding-left: 26px;
+    @media(max-width: 1199px){
+      padding-left: 0;
+    }
+
+    .variations {
+      border-radius: 32px;
+      border: 1px solid var(--gray2);
+      padding: 8px;
+      width: fit-content;
+    }
+
+    .variation {
+      label {
+        height: 40px;
+        color: var(--white);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color .2s linear, color .2s linear;
+        border: 1px solid var(--white-02);
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--black);
+        }
+      }
+
+      input {
+        &:checked {
+          &+label {
+            color: var(--black);
+            background-color: var(--white);
+            pointer-events: none;
+            border-color: var(--white);
+          }
+        }
+      }
+    }
+
+    .productAddToCart {
+      min-width: unset;
+      padding-left: 28px;
+      padding-right: 28px;
+      @media(max-width: 575px){
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &Table {
+    &Name {
+      width: 40%;
+      padding-right: 80px;
+      border-bottom: 1px solid var(--Gray, #BCBCBC);
+      @media(max-width: 1199px){
+        padding-right: 20px;
+      }
+    }
+
+    &Text {
+      width: 60%;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid var(--Gray, #BCBCBC);
+      border-left: 1px solid var(--Gray, #BCBCBC);
+      padding-left: 80px;
+      @media(max-width: 1199px){
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.productQuantity {
+  input {
+    width: 80px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 28px;
+    border: 1.5px solid var(--Gray2, #5C5C5C);
+    background: var(--white-005, rgba(255, 255, 255, 0.05));
+    color: #fff;
+    font-size: 14px;
+
+    &:focus {
+      border-color: var(--white);
+    }
+
+    @media(max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.productParams {
+  dl {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+    @media(max-width: 767px){
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    &::after {
+      background-image: radial-gradient(circle, var(--white-02) 1px, transparent 1.5px);
+      background-position: bottom;
+      background-size: 1ex 4.5px;
+      background-repeat: space no-repeat;
+      min-width: 80px;
+      content: "";
+      flex-grow: 1;
+      height: 1em;
+      order: 2;
+      @media(max-width: 767px){
+        display: none;
+      }
+    }
+
+    dt {
+      color: var(--white-06, rgba(255, 255, 255, 0.60));
+      font-weight: 400;
+
+    }
+
+    dd {
+      color: var(--white);
+      order: 3;
+      max-width: 260px;
+      @media(max-width: 767px){
+        max-width: 100%;
+      }
+    }
+  }
+}
+.productPrice {
+  @media(max-width: 991px){
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+
+  }
+}

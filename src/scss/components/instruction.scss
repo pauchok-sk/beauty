@@ -1,0 +1,53 @@
+.instruction {
+  &__wrapper {
+    @include high-tablet {
+      flex-direction: column-reverse;
+      align-items: center !important;
+    }
+  }
+  &__info {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    color: white;
+
+    .h2 {
+      @include small-tablet {
+        text-align: center;
+      }
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    @include small-tablet {
+      text-align: center;
+    }
+  }
+  &__form {
+    .formInput {
+      border-color: var(--gray2);
+      background-color: var(--white-005);
+      color: white;
+    }
+    .rect {
+      border-color: var(--gray2);
+    }
+
+    .button {
+      @media (max-width: 480px) {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  }
+  &__img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    @include high-tablet {
+      width: 100%;
+    }
+  }
+}

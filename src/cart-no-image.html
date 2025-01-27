@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Корзина без изображений"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header-white.html',{})
+		<main class="main">
+			@@include('html/cat-default.html',{})
+			@@include('html/components/breadcrumbs-obor.html',{
+			"title":"Корзина"
+			})
+			@@include('html/cart/top-no-image.html',{})
+			@@include('html/cart/content-second.html',{})
+
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

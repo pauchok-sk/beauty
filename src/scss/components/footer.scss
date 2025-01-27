@@ -1,0 +1,152 @@
+// Footer
+.footer {
+  &T {
+    padding-bottom: 100px;
+    padding-top: 80px;
+    border-bottom: 1px solid var(--white-01, rgba(255, 255, 255, 0.10));
+
+    @media(max-width: 1400px) {
+      padding-bottom: 80px;
+    }
+
+    @media(max-width: 991px) {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+  }
+
+  &B {
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    @media(max-width: 1400px) {
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+    @media(max-width: 991px){
+      padding-top: 60px;
+    }
+  }
+
+  &Nav {
+    @media(max-width: 991px) {
+      margin-bottom: 60px;
+    }
+
+    &Title {
+      margin-bottom: 40px;
+      color: var(--white-06, rgba(255, 255, 255, 0.60));
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+
+      @media(max-width: 1400px) {
+        margin-bottom: 30px;
+      }
+
+      @media(max-width: 991px) {
+        margin-bottom: 24px;
+        text-align: center;
+      }
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        a {
+          color: #fff;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+
+          @media(max-width: 991px) {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: fit-content;
+            text-align: center;
+          }
+
+          &:hover {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+
+    &--not-title {
+      padding-top: 60px;
+
+      @media(max-width: 991px) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &Logo {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 235px;
+    margin-bottom: 30px;
+  }
+
+  &Links {
+    margin-top: 80px;
+
+    @media(max-width: 1400px) {
+      margin-top: 60px;
+    }
+    a {
+      @media(max-width: 991px){
+        text-align: center;
+      }
+    }
+  }
+}
+
+.footerSocialsLink {
+  span {
+    transition: color .2s linear;
+  }
+
+  &:hover {
+    span {
+      color: var(--blue);
+    }
+
+  }
+}
+
+.mobileSocialsW {
+  @media(max-width: 991px){
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @media(max-width: 991px) {
+
+    ul:nth-child(1),
+    ul:nth-child(2) {
+      grid-column: 6 span;
+    }
+
+    ul:nth-child(3) {
+      grid-column: 6 span;
+      margin-top: 20px;
+    }
+  }
+}
+.footerWins {
+  li {
+    @media(max-width: 991px){
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}

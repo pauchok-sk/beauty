@@ -1,0 +1,243 @@
+.catalog {
+  &Sect {
+    @media(max-width: 991px){
+      padding-top: 110px;
+    }
+    @media(max-width: 410px){
+      padding-top: 120px;
+    }
+  }
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px;
+    margin-top: 60px;
+    @media(max-width: 1400px){
+      margin-top: 40px;
+      gap: 40px;
+    }
+    @media(max-width: 1199px){
+      gap: 40px 30px;
+    }
+    @media(max-width: 767px){
+      gap: 50px 20px;
+    }
+    @media(max-width: 575px){
+      gap: 50px 0;
+    }
+
+    .productCard {
+      grid-column: 4 span;
+      @media(max-width: 991px){
+        grid-column: 6 span;
+      }
+      @media(max-width: 575px){
+        grid-column: 12 span;
+      }
+    }
+    .productCard--sm {
+      @media(max-width: 575px){
+        grid-column: 6 span;
+      }
+      &:nth-child(even){
+        margin-left: 20px;
+        @media(max-width: 350px){
+          margin-left: 10px;
+        }
+      }
+      &:nth-child(odd){
+        margin-right: 20px;
+        @media(max-width: 350px){
+          margin-right: 10px;
+        }
+      }
+    }
+    &--sm {
+      @media(max-width: 575px){
+       column-gap: 0;
+       row-gap: 40px;
+      }
+    }
+  }
+
+  &Slider {
+    &-sm-pr {
+      @media(max-width: 575px){
+        padding-right: 20px;
+        overflow: visible;
+      }
+    }
+    .navArrow {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      background-repeat: no-repeat;
+      background-size: 32px;
+      background-position: center;
+      transition: background-image .2s linear;
+
+      &Prev {
+        background-image: url('@img/icons/icon-left.svg');
+
+        &:hover {
+          background-image: url('@img/icons/icon-left-white.svg');
+        }
+      }
+
+      &Next {
+        background-image: url('@img/icons/icon-right.svg');
+
+        &:hover {
+          background-image: url('@img/icons/icon-right-white.svg');
+        }
+      }
+    }
+  }
+  &Slide {
+    height: auto;
+    .productCard {
+      height: 100%;
+    }
+  }
+}
+
+.productCard {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &--black {
+    .productCardTitle {
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+
+  &--white {
+    .productCardTitle {
+      color: #000;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+
+    .productCardSubtitle {
+      color: #000;
+    }
+
+    .productCardDescr {
+      color: #000;
+    }
+  }
+
+  &Slider {
+    border-radius: 40px;
+    width: 100%;
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 30px;
+      top: unset;
+      right: 30px;
+      width: fit-content;
+      left: unset;
+    }
+  }
+
+  &Slide {
+    img {
+      width: 100%;
+      border-radius: 40px;
+      height: 420px;
+      object-fit: cover;
+      transition: transform .2s linear;
+      @media(max-width: 1400px){
+        height: 350px;
+      }
+      @media(max-width: 1199px){
+        height: 300px;
+      }
+      @media(max-width: 767px){
+        height: 250px;
+      }
+      @media(max-width: 575px){
+        height: 90vw;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &Content {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &Subtitle {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  &Title {
+    text-transform: uppercase;
+    width: fit-content;
+    @media(max-width: 991px){
+      text-transform: none;
+    }
+    a {
+      display: block;
+      width: fit-content;
+      word-break: break-word;
+    }
+  }
+
+  &Descr {
+    margin-top: 20px;
+    padding-right: 20px;
+    @media(max-width: 991px){
+      padding-right: 0;
+    }
+  }
+  &--sm {
+    .productCardSlide {
+      img {
+        @media(max-width: 575px){
+          height: 40vw;
+          border-radius: 24px;
+        }
+      }
+    }
+    .productCardSlider {
+      @media(max-width: 575px){
+        border-radius: 24px;
+      }
+    }
+    .productCardContent {
+      @media(max-width: 575px){
+        padding-top: 24px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .productCardSubtitle {
+      @media(max-width: 575px){
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    .productCardSlider .swiper-pagination {
+      @media(max-width: 575px){
+       bottom: 14px;
+      }
+    }
+  }
+}

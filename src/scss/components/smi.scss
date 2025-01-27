@@ -1,0 +1,56 @@
+.smi {
+  &Slider {
+    &-sm-pr {
+      @media(max-width: 575px){
+        padding-right: 60px;
+        margin-right: -40px;
+      }
+    }
+  }
+  &Slide {
+    height: auto;
+    .smiCard{
+      height: 100%;
+    }
+  }
+  &Card {
+    display: flex;
+    flex-direction: column;
+    &Content {
+      padding-top: 40px;
+      padding-right: 40px;
+      padding-left: 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media(max-width: 1199px){
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+      }
+    }
+    &Img {
+      &:hover {
+        opacity: .85;
+      }
+      img {
+        border-radius: 40px;
+        @media(max-width: 575px){
+          border-radius: 24px;
+        }
+      }
+    }
+    &Title {
+      @media(max-width: 767px){
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 24px;
+        font-weight: 500;
+      }
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+}

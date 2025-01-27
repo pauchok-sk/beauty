@@ -1,0 +1,713 @@
+<section class="sect pt-0 pt-lg-4 pb-0 pb-lg-5 overflow-hidden">
+  <div class="container">
+    <div class="searchW searchW--result d-none d-lg-flex justify-content-center">
+      <div class="searchInputW">
+        <input type="search" placeholder="Поиск по сайту">
+        <div class="searchAction d-flex align-items-center">
+          <button class="removeTextBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#remove"></use>
+            </svg>
+          </button>
+          <button class="removeSearchBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="searchSelect">
+        <select class="formSelect formSelect--border-l-none" name="searchSelect" id="searchSelect">
+          <option value="1">Везде</option>
+          <option value="2">Товары</option>
+          <option value="3">Мероприятия </option>
+          <option value="4">Блог </option>
+        </select>
+      </div>
+    </div>
+    <div class="resultBlock">
+      <h4 class="h4 h4--sm-20 text-uppercase mb-6 mb-6-sm-20">
+        Оборудование
+      </h4>
+
+      <div class="tabs eventsTabs search-resultTabs search-resultTabs-scroll" data-tabs="popup">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 flex-wrap align-items-center gap-2">
+          <ul class="tabs__nav p-2 gap-1 flex-no-wrap flex-sm-wrap">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Все</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Профессиональное
+                оборудование</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Базовое
+                оборудование</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Профессиональная
+                косметика</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Расходные
+                материалы</button></li>
+          </ul>
+
+          <select class="formSelect formSelect--w-fit d-none d-lg-block" name="productSort" id="productSort_1">
+            <option value="1">Сначала новые</option>
+            <option value="1">Сначала старые</option>
+          </select>
+        </div>
+
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <div class="catalogGrid mt-0">
+              @@include('../catalog/cosmetology/card-1.html',{})
+              @@include('../catalog/cosmetology/card-2.html',{})
+              @@include('../catalog/cosmetology/card-3.html',{})
+              @@include('../catalog/cosmetology/card-4.html',{})
+              @@include('../catalog/cosmetology/card-5.html',{})
+              @@include('../catalog/cosmetology/card-6.html',{})
+            </div>
+
+            <button class="button button--blue mx-auto px-5 mt-6">
+              загрузить ещё
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </button>
+
+          </div>
+          <div class="tabs__panel">
+            <div class="catalogGrid mt-0">
+              @@include('../catalog/cosmetology/card-4.html',{})
+              @@include('../catalog/cosmetology/card-5.html',{})
+              @@include('../catalog/cosmetology/card-6.html',{})
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="catalogGrid mt-0">
+              @@include('../catalog/cosmetology/card-5.html',{})
+              @@include('../catalog/cosmetology/card-6.html',{})
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="catalogGrid mt-0">
+              @@include('../catalog/cosmetology/card-6.html',{})
+            </div>
+          </div>
+          <div class="tabs__panel"></div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="resultBlock">
+      <h4 class="h4 h4--sm-20 text-uppercase mb-6 mb-6-sm-20">
+        Мероприятия
+      </h4>
+
+      <div class="tabs eventsTabs search-resultTabs" data-tabs="popup_2">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 flex-wrap align-items-center gap-2">
+          <ul class="tabs__nav p-2 gap-1 flex-no-wrap flex-sm-wrap">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Предстоящие</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Прошедшие</button></li>
+
+          </ul>
+
+          <select class="formSelect formSelect--w-fit d-none d-lg-block" name="productSort_2" id="productSort_2">
+            <option value="1">Сначала новые</option>
+            <option value="2">Сначала старые</option>
+          </select>
+        </div>
+
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <div class="row">
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-3.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Коррекция гиперпигментации кожи при помощи фракционного СО2 лазера
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Пигментные пятна на коже лица и тела являются одной из наиболее частых причин обращения к
+                        косметологу. Подобные дисхромии никак не нарушают общее состояние организма, но приносят
+                        эстетический и психологический дискомфорт клиенту. Поэтому коррекция гиперпигментации является
+                        очень актуальной на сегодняшний день. Еще с древних времен люди применяли разнообразные
+                        отбеливающие средства, чтобы цвет их кожи был светлым и однородным. Гиперпигментация – это
+                        нарушение синтеза и распределения пигмента меланина в коже. Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи. В норме меланин защищает нашу кожу от опасных ультрафиолетовых
+                        солнечных лучей. Меланоциты очень чутко реагируют на множество провоцирующих факторов
+                        (гормональный фон, воспалительный процесс, лекарственные препараты - фотосенсибилизаторы,
+                        травмы, гипоксия, стресс). Что впоследствии может приводить к патологическому усилению выработки
+                        пигмента меланина и накоплению в коже в виде темных пятен – гиперпигментации.В настоящее время
+                        интерес дерматологов и косметологов к заболеваниям с нарушением пигментообразования значительно
+                        вырос. Лечение нарушений пигментации — достаточно сложная задача из-за часто наблюдающейся
+                        резистентности к проводимой терапии и рецидивов заболевания.Для того, чтобы уметь правильно
+                        помочь клиенту решить проблему гиперпигментации, необходимо глубоко разбираться в данном
+                        вопросе, углубляясь в патогенез, разновидности, механизм возникновения дисхромий и актуальных
+                        методах коррекции.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-2.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Вожи при помощи фракционного СО2 лазера Коррекция гиперпигментации к
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-3.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Коррекция гиперпигментации кожи при помощи фракционного СО2 лазера
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Пигментные пятна на коже лица и тела являются одной из наиболее частых причин обращения к
+                        косметологу. Подобные дисхромии никак не нарушают общее состояние организма, но приносят
+                        эстетический и психологический дискомфорт клиенту. Поэтому коррекция гиперпигментации является
+                        очень актуальной на сегодняшний день. Еще с древних времен люди применяли разнообразные
+                        отбеливающие средства, чтобы цвет их кожи был светлым и однородным. Гиперпигментация – это
+                        нарушение синтеза и распределения пигмента меланина в коже. Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи. В норме меланин защищает нашу кожу от опасных ультрафиолетовых
+                        солнечных лучей. Меланоциты очень чутко реагируют на множество провоцирующих факторов
+                        (гормональный фон, воспалительный процесс, лекарственные препараты - фотосенсибилизаторы,
+                        травмы, гипоксия, стресс). Что впоследствии может приводить к патологическому усилению выработки
+                        пигмента меланина и накоплению в коже в виде темных пятен – гиперпигментации.В настоящее время
+                        интерес дерматологов и косметологов к заболеваниям с нарушением пигментообразования значительно
+                        вырос. Лечение нарушений пигментации — достаточно сложная задача из-за часто наблюдающейся
+                        резистентности к проводимой терапии и рецидивов заболевания.Для того, чтобы уметь правильно
+                        помочь клиенту решить проблему гиперпигментации, необходимо глубоко разбираться в данном
+                        вопросе, углубляясь в патогенез, разновидности, механизм возникновения дисхромий и актуальных
+                        методах коррекции.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-2.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Вожи при помощи фракционного СО2 лазера Коррекция гиперпигментации к
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-3.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Коррекция гиперпигментации кожи при помощи фракционного СО2 лазера
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Пигментные пятна на коже лица и тела являются одной из наиболее частых причин обращения к
+                        косметологу. Подобные дисхромии никак не нарушают общее состояние организма, но приносят
+                        эстетический и психологический дискомфорт клиенту. Поэтому коррекция гиперпигментации является
+                        очень актуальной на сегодняшний день. Еще с древних времен люди применяли разнообразные
+                        отбеливающие средства, чтобы цвет их кожи был светлым и однородным. Гиперпигментация – это
+                        нарушение синтеза и распределения пигмента меланина в коже. Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи. В норме меланин защищает нашу кожу от опасных ультрафиолетовых
+                        солнечных лучей. Меланоциты очень чутко реагируют на множество провоцирующих факторов
+                        (гормональный фон, воспалительный процесс, лекарственные препараты - фотосенсибилизаторы,
+                        травмы, гипоксия, стресс). Что впоследствии может приводить к патологическому усилению выработки
+                        пигмента меланина и накоплению в коже в виде темных пятен – гиперпигментации.В настоящее время
+                        интерес дерматологов и косметологов к заболеваниям с нарушением пигментообразования значительно
+                        вырос. Лечение нарушений пигментации — достаточно сложная задача из-за часто наблюдающейся
+                        резистентности к проводимой терапии и рецидивов заболевания.Для того, чтобы уметь правильно
+                        помочь клиенту решить проблему гиперпигментации, необходимо глубоко разбираться в данном
+                        вопросе, углубляясь в патогенез, разновидности, механизм возникновения дисхромий и актуальных
+                        методах коррекции.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="eventCard">
+                  <a href="#" class="eventCardImg">
+                    <img src="@img/admin/events/image-2.png" alt="image">
+                  </a>
+                  <div class="eventCardContent">
+                    <div class="eventCardContentT">
+                      <div class="h6 fw-medium mb-2 text--black">
+                        11 сентября
+                      </div>
+                      <a class="text-xl text-xl-sm-lg eventCardTitle text--black" href="#">
+                        Вожи при помощи фракционного СО2 лазера Коррекция гиперпигментации к
+                      </a>
+                      <div class="button button--sm tag button--blue min-w-unset px-2 pe-none mt-2 mb-4">
+                        online
+                      </div>
+                      <p class="eventCardDescr text--xs mb-4">
+                        Меланин – белковый пигмент, который
+                        определяет цвет нашей кожи.
+                      </p>
+                    </div>
+                    <a href="#" class="button button--text px-0 fw-normal text--xs ml-auto">
+                      узнать больше
+                      <svg style="width: 12px; height: 12px;">
+                        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="button button--blue mx-auto mt-4 mt-lg-0 px-5">
+              загрузить ещё
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </button>
+
+          </div>
+          <div class="tabs__panel">
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="resultBlock">
+      <h4 class="h4 h4--sm-20 text-uppercase mb-6 mb-6-sm-20">
+        Документы
+      </h4>
+
+      <div class="tabs eventsTabs search-resultTabs search-resultTabs-scroll" data-tabs="popup_4">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 flex-wrap align-items-center gap-2">
+          <ul class="tabs__nav p-2 gap-1 flex-no-wrap flex-sm-wrap">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Все</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Медицинская
+                клиника</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Салон красоты</button>
+            </li>
+
+          </ul>
+
+          <select class="formSelect formSelect--w-fit d-none d-lg-block" name="productSort_3" id="productSort_3">
+            <option value="1">Сначала новые</option>
+            <option value="2">Сначала старые</option>
+          </select>
+        </div>
+
+        <div class="tabs__content">
+          <div class="tabs__panel">
+
+            <div class="row">
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                      <div class="button button--sm tag button--white min-w-unset px-3 pe-none">
+                        Салон красоты
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Аварийная ситуация при проведении медицинских манипуляций
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      В медицинской организации должен вестись учет и анализ аварийных ситуаций, связанных с риском
+                      инфицирования медицинского персонала. Учет и анализ проводит врач-эпидемиолог медицинской
+                      организации,
+                      главная медицинская сестра или другой специалист в соответствии с приказом по учреждению.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      1 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Внутривенные капельные инъекции
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      Внутривенные капельные вливания применяются при различных видах лечения, при детоксикации и
+                      восстановлении кислотно-щелочного или водно-электролитного баланса, а также для нормализации
+                      метаболизма. Техника их выполнения подчиняется определенным правилам и не терпит неточностей.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      22 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                      <div class="button button--sm tag button--white min-w-unset px-3 pe-none">
+                        Салон красоты
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Аварийная ситуация при проведении медицинских манипуляций
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      В медицинской организации должен вестись учет и анализ аварийных ситуаций, связанных с риском
+                      инфицирования медицинского персонала. Учет и анализ проводит врач-эпидемиолог медицинской
+                      организации,
+                      главная медицинская сестра или другой специалист в соответствии с приказом по учреждению.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      1 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Внутривенные капельные инъекции
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      Внутривенные капельные вливания применяются при различных видах лечения, при детоксикации и
+                      восстановлении кислотно-щелочного или водно-электролитного баланса, а также для нормализации
+                      метаболизма. Техника их выполнения подчиняется определенным правилам и не терпит неточностей.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      22 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                      <div class="button button--sm tag button--white min-w-unset px-3 pe-none">
+                        Салон красоты
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Аварийная ситуация при проведении медицинских манипуляций
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      В медицинской организации должен вестись учет и анализ аварийных ситуаций, связанных с риском
+                      инфицирования медицинского персонала. Учет и анализ проводит врач-эпидемиолог медицинской
+                      организации,
+                      главная медицинская сестра или другой специалист в соответствии с приказом по учреждению.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      1 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3 pb-1 mb-lg-4 pb-lg-3 d-none d-md-block">
+                <div class="docsSeparate bg--gray">
+                  <div class="docsSeparateT">
+                    <div class="d-flex gap-1 flex-wrap mb-3 pb-1 mb-sm-4 pb-sm-3">
+                      <div class="button button--sm tag button--blue min-w-unset px-3 pe-none">
+                        Медицинская клиника
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row mb-3 pb-1 gap-3 gap-sm-0">
+                      <img src="@img/admin/doc/separate-1.png" alt="image" class="docsSeparateImg">
+                      <a href="#" class="docsSeparateTitle">
+                        Внутривенные капельные инъекции
+                      </a>
+                    </div>
+                    <p class="docsSeparateDescr text--gray2">
+                      Внутривенные капельные вливания применяются при различных видах лечения, при детоксикации и
+                      восстановлении кислотно-щелочного или водно-электролитного баланса, а также для нормализации
+                      метаболизма. Техника их выполнения подчиняется определенным правилам и не терпит неточностей.
+                    </p>
+                  </div>
+                  <div class="docsSeparateB">
+                    <div class="docsSeparatePrice">
+                      22 700 ₽
+                    </div>
+                    <div class="docsSeparateAction d-flex gap-2">
+                      <button class="button button--blue min-w-unset docsSeparateBtn">
+                        Купить
+                      </button>
+                      <a href="#" class="button button button--white min-w-unset docsSeparateBtn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <button class="button button--blue mx-auto mt-4 mt-lg-0 px-5">
+              загрузить ещё
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </button>
+
+          </div>
+          <div class="tabs__panel">
+
+          </div>
+          <div class="tabs__panel">
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="resultBlock blog-resultBlock">
+      <h4 class="h4 h4--sm-20 text-uppercase mb-6 mb-6-sm-20">
+        Блог
+      </h4>
+
+      <div class="tabs eventsTabs search-resultTabs" data-tabs="popup_3">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 flex-wrap align-items-center gap-2">
+          <ul class="tabs__nav p-2 gap-1 flex-no-wrap flex-sm-wrap">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Все</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Статьи</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Видео</button></li>
+          </ul>
+
+          <select class="formSelect formSelect--w-fit d-none d-lg-block" name="productSort_5" id="productSort_5">
+            <option value="1">Сначала новые</option>
+            <option value="2">Сначала старые</option>
+          </select>
+        </div>
+
+        <div class="tabs__content">
+          <div class="tabs__panel">
+
+            <div class="row">
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-1-archive.html',{})
+              </div>
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-2-archive.html',{})
+              </div>
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-1-archive.html',{})
+              </div>
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-2-archive.html',{})
+              </div>
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-1-archive.html',{})
+              </div>
+              <div class="col-lg-4 mb-6 mb-6-sm-20">
+                @@include('../blog/card-2-archive.html',{})
+              </div>
+            </div>
+
+            <button class="button button--blue mx-auto mt-4 mt-lg-0 px-5">
+              загрузить ещё
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </button>
+
+          </div>
+          <div class="tabs__panel">
+
+          </div>
+          <div class="tabs__panel">
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+</section>

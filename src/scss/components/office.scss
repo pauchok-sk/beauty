@@ -1,0 +1,61 @@
+.officeImg {
+  width: 100%;
+  height: auto;
+}
+
+.officeItemTitle {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.office {
+  .reqItemIcon {
+    position: relative;
+    top: 3px;
+  }
+}
+
+.offceItemLink {
+  &:hover {
+    color: var(--blue);
+  }
+}
+
+.map {
+  padding-bottom: 60px;
+
+  @media(max-width: 991px) {
+    padding-bottom: 20px;
+  }
+
+  iframe {
+    height: 540px;
+    width: 100%;
+
+    @media(max-width: 991px) {
+      height: 400px;
+    }
+  }
+}
+
+.mapAction iframe {
+  pointer-events: none;
+}
+
+.mapIframe.onScroll {
+  pointer-events: all;
+}
+
+.office {
+  @media(max-width: 991px) {
+    padding-bottom: 20px;
+  }
+
+  .reqItemIcon {
+    @media(max-width: 991px) {
+      margin-right: 0;
+      width: 32px;
+    }
+  }
+}

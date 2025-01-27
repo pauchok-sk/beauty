@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Карточка товара"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header-white.html',{})
+		<main class="main">
+			@@include('html/cat-default.html',{})
+			@@include('html/components/breadcrumbs-obor.html',{
+			"title":"Карточка товара"
+			})
+			@@include('html/product/main.html',{})
+			@@include('html/product/tabs.html',{})
+			@@include('html/product/reviews.html',{})
+			@@include('html/product/related.html',{})
+			@@include('html/blog-white.html',{})
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

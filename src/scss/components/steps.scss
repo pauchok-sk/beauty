@@ -1,0 +1,28 @@
+.steps {
+  &Card {
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+    border-radius: 40px;
+    padding: 40px;
+    height: 100%;
+    &Num {
+      color: var(--Secondary, #339);
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 0.96px;
+      text-transform: uppercase;      
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    &Title {
+      margin-bottom: 40px;
+    }
+  }
+}
+.stepsSect{
+  padding-top: 0;
+  @media(max-width: 991px){
+    padding-top: 60px;
+    border-top: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+  }
+}

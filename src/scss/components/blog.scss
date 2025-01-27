@@ -1,0 +1,232 @@
+.blog {
+  &Card {
+    border-radius: 40px;
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+
+    &Content {
+      padding-top: 16px;
+      padding-right: 13px;
+      padding-left: 27px;
+      padding-bottom: 40px;
+
+      @media(max-width: 991px) {
+        padding-bottom: 24px;
+      }
+    }
+
+    &Img {
+      &:hover {
+        opacity: .8;
+      }
+
+      img {
+        border-radius: 40px;
+        width: 100%;
+        object-fit: cover;
+        height: 240px;
+
+        @media(max-width: 575px) {
+          border-radius: 24px;
+        }
+      }
+    }
+
+    .h6 {
+      @media(max-width: 991px) {
+        text-transform: uppercase;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+      }
+
+      a {
+        display: block;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+
+      &.text--black {
+        color: var(--black);
+
+        a {
+          &:hover {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+
+    &--white {
+      border: 1px solid var(--Gray, #BCBCBC);
+    }
+
+    &--archive {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .blogCardContent {
+        padding-top: 35px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 33px;
+
+        @media(max-width: 991px) {
+          padding-bottom: 24px;
+          padding-top: 24px;
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+
+      .blogCardImg {
+
+        img {
+          height: 320px;
+
+          @media(max-width: 575px) {
+            height: 260px;
+          }
+        }
+      }
+    }
+
+    &--baner {
+      position: relative;
+      min-height: 550px;
+
+      @media(max-width: 991px) {
+        min-height: 480px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba($color: #000000, $alpha: .5);
+        transition: opacity .2s linear;
+      }
+
+      padding: 65px 40px;
+
+      &:hover {
+        &:before {
+          opacity: .7;
+        }
+      }
+
+      .h3 {
+        position: relative;
+        z-index: 1;
+
+        @media(max-width: 991px) {
+          font-size: 28px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    &--email {
+      padding: 40px;
+
+      .button {
+        margin-top: 32px;
+        width: 100%;
+      }
+    }
+  }
+
+  &Slider {
+    &--sm-pr {
+      @media(max-width: 575px) {
+        overflow: visible;
+        padding-right: 20px;
+      }
+    }
+
+    .swiper-slide {
+      height: auto;
+
+      .blogCard {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.blogTitleArchive {
+  font-size: 18px;
+  line-height: 32px;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+}
+
+.blogSearchW {
+  display: flex;
+
+  @media(max-width: 991px) {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+  }
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+
+  }
+
+  .searchInputW {
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+
+    input {
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+  .searchSelect {
+    flex-shrink: 0;
+  }
+}
+
+.blogSort+.select2 {
+  @media(max-width: 991px) {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%!important;
+    z-index: 1;
+    background-color: var(--black);
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    border-radius: 27px;
+  }
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+}

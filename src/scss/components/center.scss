@@ -1,0 +1,19 @@
+.center {
+  &Intro {
+    &Img {
+      width: 100%;   
+      height: 605px;
+      object-fit: cover;
+      object-position: center;
+      @media(max-width: 1400px){
+        height: 500px;
+      }
+      @media(max-width: 991px){
+        max-height: 400px;     
+      }
+      @media(max-width: 575px){
+        height: 85vw;
+      }
+    }
+  }
+}

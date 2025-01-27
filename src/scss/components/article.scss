@@ -1,0 +1,133 @@
+.article {
+  &Image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.commentBlock {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--gray2);
+  border-bottom: 1px solid var(--gray2);
+  margin-top: 80px;
+}
+
+.commentImg {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 17px;
+  @media(max-width: 991px){
+    width: 84px;
+    height: 84px;
+  }
+}
+
+.commentContent {
+  row-gap: 10px;
+
+  .h5 {
+    font-size: 18px;
+    line-height: 32px;
+    @media(max-width: 575px){
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.commentBtnW {
+  width: 100%;
+  margin-top: 90px;
+
+  @media(max-width: 991px) {
+    margin-top: 40px;
+  }
+
+  .button {
+    width: 50%;
+  }
+}
+
+.commentContent {
+  padding-top: 40px;
+  // @media(max-width: 991px){
+  //   padding-top: 0;
+  // }
+}
+
+.commentItemPerson {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  @media(max-width: 575px){
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.commentItemContent {
+  padding: 20px 32px;
+  border-radius: 2px 40px 40px 40px;
+  border: 1px solid var(--white-01, rgba(255, 255, 255, 0.10));
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  @media(max-width: 991px){
+    padding: 16px 20px;
+  }
+}
+
+.commentItem {
+  &--pl {
+    padding-left: 80px;
+
+    @media(max-width: 991px) {
+      padding-left: 48px;
+    }
+    @media(max-width: 575px){
+      padding-left: 30px;
+    }
+  }
+}
+
+.likeBtn {
+  &:hover {
+    svg {
+      fill: rgba($color: #fff, $alpha: 1.0);
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba($color: #fff, $alpha: .6);
+  }
+
+  &.active {
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: rgba($color: #fff, $alpha: 1);
+    }
+  }
+}
+
+.commentBlockAction {
+  .button--round {
+    flex-shrink: 0;
+  }
+}
+.advSlider .articleEventSwiperWrapper {
+  flex-direction: column;
+  display: flex;
+  .introEventSlide{
+    background-image: none!important;
+  }
+  @media(max-width: 991px){
+    flex-direction: row;
+  }
+}

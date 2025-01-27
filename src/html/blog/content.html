@@ -1,0 +1,210 @@
+<section class="sect pt-5 pt-lg-4 pb-0">
+  <div class="container">
+    <div class="mb-4 pb-3">
+      <p class="text--white" style="max-width: 745px;">
+        Рассказываем об инновациях и тенденциях в сфере аппаратной косметологии и эстетической медицины.
+      </p>
+    </div>
+
+    <ul class="catList d-flex flex-no-wrap flex-sm-wrap mb-6 mb-6-sm-40">
+      <li class="catItem active"><a class="catLink px-4 fw-medium" href="#">все</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">для косметологов</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">для руководителей</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">маркетинг</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">новости компании</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">кейсы</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">обзор методик</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">обзор оборудования</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">сервис</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">мероприятия</a></li>
+      <li class="catItem"><a class="catLink px-4 fw-medium" href="#">техническая информация </a></li>
+    </ul>
+
+    <div class="tabs eventsTabs blogTabs" data-tabs="popup_2">
+      <div class="d-flex justify-content-between mb-6 mb-6-sm-40 position-relative">
+        <div class="d-flex gap-2 w-100 justify-content-between justify-content-lg-start">
+          <div class="searchW blogSearchW">
+            <div class="searchInputW">
+              <input type="search" placeholder="Поиск">
+              <div class="searchAction d-flex align-items-center">
+                <button class="removeTextBtn">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#remove"></use>
+                  </svg>
+                </button>
+                <button class="removeSearchBtn">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="searchSelect">
+              <select class="formSelect formSelect--border-l-none" name="searchSelect" id="searchSelect">
+                <option value="1">Везде</option>
+                <option value="2">Товары</option>
+                <option value="3">Мероприятия</option>
+                <option value="4">Блог </option>
+              </select>
+            </div>
+          </div>
+          <ul class="tabs__nav p-2 gap-1">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Все</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Статьи</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Видео</button></li>
+          </ul>
+          <button class="blogSearchBtn button button--round d-flex d-lg-none">
+            <!-- <img src="@img/icons/search-white.svg" alt="icon"> -->
+          </button>
+        </div>
+        <select name="sort" id="sort" class="formSelect blogSort formSelect--w-fit">
+          <option value="1">Сначала новые</option>
+          <option value="2">Сначала старые</option>
+        </select>
+      </div>
+
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <div class="row">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-email.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>   
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>        
+          </div>
+          <button class="button button--blue mx-auto">
+            загрузить ещё
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="tabs__panel">
+          <div class="row">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>   
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>        
+          </div>
+          <button class="button button--blue mx-auto">
+            загрузить ещё
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="tabs__panel">
+          <div class="row">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('baner.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-2-archive.html',{})
+            </div>   
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
+              @@include('card-1-archive.html',{})
+            </div>        
+          </div>
+          <button class="button button--blue mx-auto">
+            загрузить ещё
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,28 @@
+.videoImg {
+  border-radius: 40px;
+  border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+  width: 100%;
+  object-fit: cover;
+  height: 245px; 
+  @media(max-width: 575px){
+    border-radius: 24px;
+    height: 55vw;
+  }
+}
+.videoSlide {
+  transition: opacity .2s linear;
+  .h6 {
+    margin-top: 20px;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}
+.videoSlider {
+  &--sm-pr {
+    @media(max-width: 575px){
+      padding-right: 20px;
+      overflow: visible;
+    }
+  }
+}

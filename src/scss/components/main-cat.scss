@@ -1,0 +1,63 @@
+@-webkit-keyframes white-label-blick-7543ac36 {
+
+  15%,
+  to {
+    left: 110%
+  }
+}
+
+@keyframes white-label-blick-7543ac36 {
+
+  15%,
+  to {
+    left: 110%
+  }
+}
+
+.mainCat {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--white-02);
+
+  &Link {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.65px;
+  
+    span {
+      overflow: hidden;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4px;       
+        width: 10px;
+        height: 13px;
+        background: radial-gradient(hsla(0, 0%, 100%, 1) 0, hsla(0, 0%, 100%, 0.25) 45%, hsla(0, 0%, 100%, .87) 70%);        
+        border-radius: 50%;
+        left: -20px;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        -webkit-animation-name: white-label-blick-7543ac36;
+        animation-name: white-label-blick-7543ac36;
+        -webkit-animation-duration: 4s;
+        animation-duration: 4s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        transform: rotate(45deg);
+      }
+    }
+
+
+
+    @media(max-width: 1199px) {
+      column-gap: 8px;
+    }
+  }
+
+  &--def {
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+}

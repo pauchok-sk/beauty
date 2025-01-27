@@ -1,0 +1,29 @@
+.aparatsGalImg {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity .2s linear;
+  @media(max-width: 1199px){
+    height: 210px;
+  }
+  @media(max-width: 575px){
+    height: 33vw;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}
+.aparatsGalImg--lg {
+  height: 543px;
+  width: 100%;
+  object-fit: cover;
+  @media(max-width: 1199px){
+    height: 444px;
+  }
+  @media(max-width: 767px){
+    height: 360px;
+  }
+  @media(max-width: 575px){
+    height: 85vw;
+  }
+}

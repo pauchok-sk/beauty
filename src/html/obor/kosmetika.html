@@ -1,0 +1,56 @@
+<section class="sect">
+  <div class="container">
+    <h2 class="h3 text-uppercase fw-bold text-start mb-0" style="max-width: 1130px;">
+      Профессиональная косметика
+    </h2>
+    <div class="catalogGrid catalogGrid--sm pb-4">
+      @@include('../catalog/kosmetika/card-1.html',{})
+      @@include('../catalog/kosmetika/card-2.html',{})
+      <div class="productCard productCard--black productCard--sm d-none d-lg-flex">
+
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="@img/admin/product/kosmetika-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="@img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text-uppercase">
+              <a href="#">Jojoba face & body scrub</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Гель-скраб для лица и тела
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Средство содержит частицы жожоба, которые усиливают массажный эффект. Во время процедуры микрогранулы
+              постепенно
+              растворяются, глубоко увлажняя кожу.
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="button button--blue mt-5 mx-auto d-flex d-lg-none">
+      загрузить ещё
+      <svg>
+        <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+      </svg>
+    </button>
+
+  </div>
+</section>

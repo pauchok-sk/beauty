@@ -1,0 +1,64 @@
+<section class="instruction">
+  <div class="container">
+    <div class="d-flex align-items-stretch gap-4 instruction__wrapper">
+      <div class="flex-fill instruction__main instruction__info">
+        <h2 class="h2 fw-medium mb-4">Получить пошаговую инструкцию</h2>
+        <p class="instruction__content mb-5">
+          Если вы хотите получить пошаговую инструкцию открытия кабинета
+          лазерной эпиляции, оставьте свои контакты.
+        </p>
+        <form class="instruction__form" action="#">
+          <div class="inputW mb-2 mb-md-3 form-floating">
+            <input
+              type="text"
+              class="form-control formInput formInput--black"
+              id="catalogGetName"
+              placeholder="Ваше имя"
+            />
+            <label for="catalogGetName">Ваше имя</label>
+          </div>
+          <div class="inputW mb-2 mb-md-3 form-floating">
+            <input
+              type="tel"
+              class="form-control formInput formInput--black"
+              id="catalogGetPhone"
+              placeholder="Контактный телефон"
+            />
+            <label for="catalogGetPhone">Контактный телефон</label>
+          </div>
+          <div class="inputW mb-2 mb-md-3 form-floating">
+            <input
+              type="tel"
+              class="form-control formInput formInput--black"
+              id="catalogGetEmail"
+              placeholder="Email"
+            />
+            <label for="catalogGetMail">Email</label>
+          </div>
+
+          <div class="agreement mt-4">
+            <input
+              type="checkbox"
+              class="checkboxInput"
+              id="catalogGet_form"
+              checked
+            />
+            <label
+              class="checkboxLabel align-items-start"
+              for="catalogGet_form"
+            >
+              <span class="rect"></span>
+              <div class="agreementText text-white">
+                Соглашаюсь на
+                <a href="#" target="_blank">обработку персональных данных</a>
+              </div>
+            </label>
+          </div>
+
+          <button class="button button--blue mt-4">Получить инструкцию</button>
+        </form>
+      </div>
+      <img src="@img/instruction.jpg" alt="image" class="instruction__img" />
+    </div>
+  </div>
+</section>

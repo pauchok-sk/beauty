@@ -1,0 +1,59 @@
+.price {
+  &Title {
+    position: relative;
+    padding-bottom: 40px;
+    width: fit-content;
+
+    &::before {
+      content: '';
+      width: 60px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      bottom: 0;
+    }
+  }
+  &Card {
+    border-radius: 40px;
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+    background: var(--Primary, #000);
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(max-width: 991px){
+      padding: 30px;
+    }
+    @media(max-width: 380px){
+      padding: 20px;
+    }
+    .tag {
+      margin-bottom: 40px;
+      @media(max-width: 991px){
+        margin-bottom: 20px;
+      }
+    }
+    &Title {
+      margin-bottom: 40px;
+      @media(max-width: 991px){
+        margin-bottom: 20px;
+      }
+    }
+    &Sum {
+      margin-bottom: 20px;
+    }
+  }
+}
+.priceSlide {
+  height: auto;
+}
+.priceSlider {
+  @media(max-width: 767px){
+    overflow: visible;
+    padding-right: 20px;
+  }
+}

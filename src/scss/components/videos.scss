@@ -1,0 +1,46 @@
+.videos {
+  overflow: hidden;
+  padding: 80px 0px;
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 400;
+    max-width: 830px;
+    margin: 0px auto 60px auto;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__slider {
+    margin-bottom: 60px;
+    @include high-tablet {
+       overflow: visible !important;
+    }
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+    .swiper-wrapper {
+      align-items: stretch;
+    }
+    .swiper-slide {
+      height: auto !important;
+      @include high-tablet {
+        width: 380px !important;
+      }
+      @media (max-width: 420px) {
+        width: 320px !important;
+      }
+    }
+    .caseItem {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .caseItemTitle {
+      flex: 1;
+    }
+  }
+}

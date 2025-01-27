@@ -1,0 +1,97 @@
+.aparat {
+  &W {
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+    padding: 40px;
+    @media(max-width: 991px){
+      border-color: transparent;
+      padding: 0;
+      padding-bottom: 40px;
+    }
+  }
+
+  &List {
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      display: flex;
+      column-gap: 40px;
+
+      &::before {
+        content: '—';
+      }
+    }
+  }
+}
+.aparatImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  @media(max-width: 575px){
+    height: 85vw;
+  }
+}
+.workPriceHead {
+  display: grid;
+  grid-template-columns: auto 240px;
+
+  .workPriceCol {
+    &:nth-child(2){
+      border-left: 1px solid var(--Gray, #BCBCBC);
+    }
+  }
+}
+
+.workPriceBody {
+  .workPriceRow {
+    display: grid;
+    grid-template-columns: auto 240px;
+    @media(max-width: 991px){
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid var(--Gray, #BCBCBC);
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    &:nth-child(1){
+      @media(max-width: 991px){
+        border-top: 1px solid var(--Gray, #BCBCBC);
+        padding-top: 18px;
+      }
+    }
+
+    .workPriceCol:nth-child(2) {
+      border-left: 1px solid var(--Gray, #BCBCBC);
+      font-weight: 500;
+      @media(max-width: 991px){
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.workPriceCol {
+  border-bottom: 1px solid var(--Gray, #BCBCBC);
+  padding-right: 40px;
+  @media(max-width: 991px){
+    border-color: transparent;
+    padding-right: 0;
+  }
+
+  &:nth-child(2) {
+    padding-left: 40px;   
+    @media(max-width: 991px){
+      padding-left: 0;
+      padding-top: 0;
+    }
+  }
+}
+.priceParams {
+ column-gap: 40px;
+ row-gap: 20px; 
+}
+.priceParamIcon {
+  width: 24px;
+}
