@@ -1,0 +1,44 @@
+.results {
+  overflow: hidden;
+  padding-bottom: 80px;
+  background-color: var(--gray-bckg);
+  color: black;
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 400;
+    color: inherit;
+    margin-bottom: 60px;
+  }
+  &__slider {
+    margin-bottom: 60px;
+    @include high-tablet {
+      overflow: visible !important;
+      margin-bottom: 40px;
+    }
+    .swiper-slide {
+      @include hover {
+        color: var(--blue);
+      }
+      @include high-tablet {
+        width: 325px !important; 
+      }
+    }
+  }
+  &__slide-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgba(255, 255, 255, 0.20);
+    border: 1px solid var(--gray);
+  }
+  &__slide-title {
+    color: inherit;
+    text-align: center;
+    transition: color .2s ease;
+  }
+}

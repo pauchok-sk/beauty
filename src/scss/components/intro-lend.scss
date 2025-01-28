@@ -24,7 +24,6 @@
   &__subtitle {
     font-weight: 400;
     text-transform: uppercase;
-    max-width: 625px;
   }
   &__gallery {
     position: relative;
@@ -141,14 +140,21 @@
       &:not(:last-child) {
         padding-right: 0;
         border-right: none;
+      }
 
+      &::after {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 1px;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+    @include high-tablet {
+      &:last-child {
         &::after {
-          position: absolute;
-          content: "";
-          width: 200px;
-          height: 1px;
-          bottom: 0;
-          background-color: rgba(255, 255, 255, 0.1);
+          display: none;
         }
       }
     }
@@ -161,7 +167,9 @@
     line-height: 32px;
     font-weight: 500;
     text-transform: uppercase;
-    flex: 1;
+    @include high-desktop {
+      flex: 1;
+    }
     @include high-tablet {
       font-size: 16px;
       line-height: 24px;
@@ -173,5 +181,6 @@
     line-height: 20px;
     letter-spacing: 0.28px;
     margin: 0;
+    flex: 1;
   }
 }

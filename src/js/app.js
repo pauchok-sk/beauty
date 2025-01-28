@@ -815,6 +815,113 @@ if (documentsSlider) {
   });
 }
 
+const proceduresSlider = document.querySelector(".procedures__slider");
+
+if (proceduresSlider) {
+  const swiper = new Swiper(proceduresSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 15,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".procedures .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".procedures .navArrowNext",
+      prevEl: ".procedures .navArrowPrev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      }
+    },
+  });
+}
+
+const resultsSlider = document.querySelector(".results__slider");
+
+if (resultsSlider) {
+  const swiper = new Swiper(resultsSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".results .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".results .navArrowNext",
+      prevEl: ".results .navArrowPrev",
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      }
+    },
+  });
+}
+
+const investmentSlider = document.querySelector(".investment__slider");
+
+if (investmentSlider && window.matchMedia("(max-width: 991px)").matches) {
+  const swiper = new Swiper(investmentSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".investment .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".investment .navArrowNext",
+      prevEl: ".investment .navArrowPrev",
+    },
+  });
+}
+
+const advantagesSlider = document.querySelector(".advantages__slider");
+
+if (advantagesSlider) {
+  const swiper = new Swiper(advantagesSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    autoHeight: true,
+    pagination: {
+      el: document.querySelector(".advantages .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".advantages .navArrowNext",
+      prevEl: ".advantages .navArrowPrev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    }
+  });
+}
+
 const mediaQueryMin992 = window.matchMedia("(min-width: 992px)");
 if (mediaQueryMin992.matches) {
   // Инициализация слайдера reviewsSliderSm

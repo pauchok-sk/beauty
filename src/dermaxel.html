@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/header-white.html',{})
+      @@include('html/cat-default.html',{})
+      <main class="main">
+        <section class="intro-lend">
+          <div class="container">
+            <section class="breadcrumbsSect py-0" id="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li>
+                      <a href="#"> Главная </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <a href="#"> Профессиональное оборудование </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <span> IN-MOTION D1 </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <div class="intro-lend__head mt-4">
+              <h1 class="h1 intro-lend__head-title">IN-MOTION D1™</h1>
+              <p class="intro-lend__head-content mb-5">
+                Фракционный СО2 (углекислотный) лазер
+              </p>
+              <h3 class="h3 intro-lend__subtitle mb-4 md:mb-5">
+                Более 20 востребованных процедур и
+                <strong
+                  >впечатляющие <br />
+                  результаты</strong
+                >, которые поднимут репутацию вашей клиники
+              </h3>
+              <button
+                class="button button--blue"
+                data-fancybox
+                data-src="#modalOrder"
+              >
+                Связаться с менеджером
+              </button>
+            </div>
+            <div class="intro-lend__gallery mt-5">
+              <div class="intro-lend__video gap-3">
+                <a
+                  href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                  data-fancybox=""
+                  class="intro-lend__video-rect"
+                >
+                  <img
+                    class="intro-lend__video-img"
+                    src="@img/admin/widget/video.png"
+                    alt="image"
+                  />
+                  <div class="intro-lend__video-btn">
+                    <img src="@img/icons/play-white.svg" alt="icon" />
+                  </div>
+                </a>
+                <span class="intro-lend__video-content"
+                  >Узнайте об аппарате за 2 минуты</span
+                >
+              </div>
+              <img
+                src="@img/dermaxel.jpg"
+                alt="image"
+                class="intro-lend__gallery-img"
+              />
+            </div>
+            <ul class="intro-lend__adv">
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Широкая функциональность
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Один аппарат для более 20 популярных процедур: шлифовка кожи,
+                  удаление рубцов, лечение пигментации и интимное омоложение
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Высокая <br />
+                  рентабельность
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Средний срок окупаемости - всего 6 месяцев, при этом каждая
+                  <br />
+                  процедура приносит до 90% <br />
+                  прибыли
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Качество мирового уровня
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Аппарат произведен лидером медицинских технологий AMI (Южная
+                  Корея), имеет гарантию 2 года и поддерживается собственным
+                  сервисным центром в России
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Простота <br />
+                  использования
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Работать с Dermaxel легко даже начинающим специалистам
+                  благодаря готовым протоколам, удобной панели управления и
+                  автоматическим настройкам
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        @@include('html/procedures.html',{})
+        <section class="sect">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-6 order-2 order-lg-1 pt-3 mt-4 pt-sm-0 mt-sm-0"
+              >
+                <div
+                  class="consultW consultW--p-sm-0 consultW--border-white-02 h-100 _border"
+                >
+                  <h2 class="h3 fw-medium mb-2 text-center text-sm-start">
+                    Один фракционный со2 лазер Dermaxel включает в себя
+                    функционал оборудования стоимостью более 15 000 000*
+                  </h2>
+                  <p
+                    class="text--white text-center text-sm-start mb-4 pb-3 pb-lg-0"
+                  >
+                    * Если отдельно приобретать оборудование под все процедуры,
+                    которые можно выполнить на Dermaxel.
+                  </p>
+                  <div class="inputW mb-2 mb-sm-3">
+                    <input
+                      type="text"
+                      class="formInput formInput--bg-white-005"
+                      placeholder="Имя"
+                    />
+                  </div>
+                  <div class="inputW mb-2 mb-sm-3">
+                    <input
+                      type="tel"
+                      class="formInput formInput--bg-white-005"
+                      placeholder="Контактный телефон"
+                    />
+                  </div>
+                  <div class="agreement">
+                    <input
+                      type="checkbox"
+                      class="checkboxInput"
+                      id="catalogGet_form"
+                      checked
+                    />
+                    <label
+                      class="checkboxLabel align-items-center"
+                      for="catalogGet_form"
+                    >
+                      <span class="rect rect--gray2 position-static"></span>
+                      <div class="agreementText text--sm text--white">
+                        Соглашаюсь на
+                        <a href="#" target="_blank"
+                          >обработку персональных данных</a
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <button
+                    class="button button--blue mt-4 px-4 min-w-unset button--sm-100"
+                  >
+                    Получить бесплатную консультацию
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 mt-4 mt-lg-0">
+                <img
+                  src="@img/fraction.jpg"
+                  alt="image"
+                  class="consultImg consultImg--lg h-100"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="before-after">
+          <div class="container">
+            <h2 class="h3 before-after__title text-uppercase mb-4">
+              <strong>Высокая эффективность —</strong> быстрая окупаемость
+            </h2>
+            <p class="before-after__subcontent">
+              Больше результатов процедур ДО/ПОСЛЕ вы можете посмотреть
+              <a href="#">здесь</a>
+            </p>
+            <div class="before-after__wrapper">
+              <div class="before-after__info">
+                <div class="before-after__content">
+                  <p>
+                    Эффективность аппарата проверена и доказана сотнями
+                    специалистов и тысячами пациентов в более чем 50 странах
+                    мира.
+                  </p>
+                  <p>
+                    Фракционная платформа DERMAXEL высоко оценена врачами разных
+                    направлений и медицинскими учреждениями, в том числе
+                    специалистами НМИЦ АГП имени академика В.И. Кулакова.
+                    Клинические данные подтвердили высокую эффективность
+                    процедур и  протоколов, разработанных на СО2 лазере
+                    DERMAXEL.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  download="#"
+                  data-da=".before-after__gallery, 1199"
+                  class="button button--blue mt-5"
+                >
+                  <span>Скачать кейсбук</span>
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#download"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="before-after__gallery">
+                <div class="swiper before-after__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/before-2.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title">До</span>
+                      </div>
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/after-2.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title"
+                          >После</span
+                        >
+                      </div>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        class="before-after__range"
+                      />
+                      <div class="before-after__range-view">
+                        <div class="before-after__range-arrows"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/before.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title">До</span>
+                      </div>
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/after.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title"
+                          >После</span
+                        >
+                      </div>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        class="before-after__range"
+                      />
+                      <div class="before-after__range-view">
+                        <div class="before-after__range-arrows"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/before.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title">До</span>
+                      </div>
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/after.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title"
+                          >После</span
+                        >
+                      </div>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        class="before-after__range"
+                      />
+                      <div class="before-after__range-view">
+                        <div class="before-after__range-arrows"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/before.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title">До</span>
+                      </div>
+                      <div class="before-after__slide-item">
+                        <img
+                          src="@img/after.jpg"
+                          alt="image"
+                          class="before-after__slide-img"
+                        />
+                        <span class="before-after__slide-item-title"
+                          >После</span
+                        >
+                      </div>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        class="before-after__range"
+                      />
+                      <div class="before-after__range-view">
+                        <div class="before-after__range-arrows"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4 mt-lg-5">
+                  <button class="navArrow navArrow--gray2 navArrowPrev">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination"></div>
+                  <button class="navArrow navArrow--gray2 navArrowNext">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @@include('html/results.html',{})
+        @@include('html/investment.html',{})
+        @@include('html/advantages.html',{})
+      </main>
+      @@include('html/footer.html',{}) @@include('html/modal.html',{})
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

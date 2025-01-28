@@ -1,0 +1,82 @@
+.procedures {
+  padding: 80px;
+  overflow: hidden;
+  background-color: var(--gray-bckg);
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    font-weight: 400;
+    max-width: 1060px;
+    color: black;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__slider {
+    margin-bottom: 60px;
+    @include high-tablet {
+      overflow: visible !important;
+      margin-bottom: 40px;
+    }
+    .swiper-slide {
+      @include high-tablet {
+        width: 385px !important;
+      }
+      @media (max-width: 420px) {
+        width: 320px !important;
+      }
+    }
+  }
+  &__slide-img {
+    width: 100%;
+    height: 520px;
+    border-radius: 40px;
+    object-fit: cover;
+    @include big-desktop {
+      height: 400px;
+    }
+    @include high-desktop {
+      height: 300px;
+    }
+    @include high-tablet {
+      height: 295px;
+    }
+    @media (max-width: 420px) {
+      height: 280px;
+    }
+  }
+  &__slide-body {
+    padding: 40px;
+    @include high-tablet {
+      padding: 20px;
+    }
+  }
+  &__slide-title {
+    color: black;
+  }
+  &__slide-list {
+    li {
+      position: relative;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+      padding-left: 20px;
+      @include high-tablet {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.28px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        top: 10px;
+        border-radius: 50%;
+        background-color: currentColor;
+      }
+    }
+  }
+}
