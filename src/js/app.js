@@ -780,6 +780,41 @@ if (promoSlider) {
   });
 }
 
+const documentsSlider = document.querySelector(".documents__slider");
+
+if (documentsSlider) {
+  const swiper = new Swiper(documentsSlider, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".documents .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".documents .navArrowNext",
+      prevEl: ".documents .navArrowPrev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      481: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    },
+  });
+}
+
 const mediaQueryMin992 = window.matchMedia("(min-width: 992px)");
 if (mediaQueryMin992.matches) {
   // Инициализация слайдера reviewsSliderSm

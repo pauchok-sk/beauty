@@ -13,9 +13,14 @@
     }
   }
   &__slider {
+    margin-bottom: 60px;
     @include high-desktop {
       overflow: visible !important;
     }
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+    
     .swiper-slide {
       @include high-desktop {
         width: 305px !important;
