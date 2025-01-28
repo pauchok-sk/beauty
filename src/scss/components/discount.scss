@@ -1,0 +1,83 @@
+.discount {
+  position: relative;
+  padding: 160px 0px 130px 0px;
+  background-color: var(--gray-3);
+  z-index: 1;
+  @include high-tablet {
+    padding: 40px 0px 400px 0px;
+    background: linear-gradient(
+      90deg,
+      #b8b8ba 13.75%,
+      #bdbdbd 34.91%,
+      #bbbbbd 55.29%,
+      #bbbbbd 79.85%,
+      #bababc 92.5%,
+      #b3b3b3 100%
+    );
+  }
+  &__bg {
+    position: absolute;
+    width: 1280px;
+    max-width: none;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    @include high-desktop {
+      width: 1000px;
+    }
+    @include high-tablet {
+      height: 360px;
+      width: auto;
+    }
+  }
+  &__info {
+    max-width: 480px;
+    @include high-tablet {
+      margin: 0 auto;
+    }
+    @include mobile {
+      padding: 0 20px;
+    }
+  }
+  &__title {
+    color: black;
+    span {
+      color: var(--blue);
+    }
+    @include high-tablet {
+      text-align: center;
+    }
+  }
+  &__content {
+    max-width: 485px;
+    font-size: 20px;
+    line-height: 30px;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin-left: auto;
+
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--blue);
+    }
+  }
+  &__btn-arrow {
+    width: 20px;
+    height: 20px;
+    fill: var(--blue);
+  }
+}

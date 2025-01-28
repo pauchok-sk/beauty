@@ -6,7 +6,6 @@ import "./modules/bootstrap.bundle.min.js";
 import "./modules/select2.min.js";
 import "./components.js";
 import beforeAfter from "./modules/beforeAfter.js";
-import more from "./modules/more.js";
 
 flsFunctions.mediaAdaptive();
 flsFunctions.isWebp();
@@ -95,6 +94,7 @@ import Swiper, {
   Thumbs,
   Scrollbar,
 } from "swiper";
+import more from "./modules/more.js";
 
 Swiper.use([
   Navigation,
@@ -683,6 +683,49 @@ if (hairRemovalSlider && window.matchMedia("(max-width: 991px)").matches) {
   });
 }
 
+const historySlider = document.querySelector(".history__slider");
+
+if (historySlider) {
+  const buttonsNav = document.querySelectorAll(".history__btn");
+
+  const swiper = new Swiper(historySlider, {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    autoHeight: true,
+    pagination: {
+      el: document.querySelector(".history .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".history .navArrowNext",
+      prevEl: ".history .navArrowPrev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+    on: {
+      init: () => {
+        buttonsNav.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            swiper.slideTo(index);
+          })
+        })
+      },
+      slideChange: ({ activeIndex }) => {
+        buttonsNav.forEach((b) => b.classList.remove("_active"));
+        buttonsNav[activeIndex].classList.add("_active");
+      },
+    },
+  });
+}
+
 const videosSlider = document.querySelector(".videos__slider");
 
 if (videosSlider) {
@@ -705,8 +748,35 @@ if (videosSlider) {
       992: {
         slidesPerView: 2,
         spaceBetween: 20,
-      }
-    }
+      },
+    },
+  });
+}
+
+const promoSlider = document.querySelector(".promo__slider");
+
+if (promoSlider) {
+  const swiper = new Swiper(promoSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".promo .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".promo .navArrowNext",
+      prevEl: ".promo .navArrowPrev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
   });
 }
 

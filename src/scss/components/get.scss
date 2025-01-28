@@ -1,0 +1,64 @@
+.get {
+  padding: 80px 0px;
+  background-color: var(--gray);
+  @include small-tablet {
+    padding: 60px 0px 20px 0px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+    color: black;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 36px;
+    @include high-tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 1;
+  }
+  &__list {
+    li {
+      padding-left: 72px;
+      background: url("@img/check-circle.svg") 0 0 / 32px auto no-repeat;
+      @include high-tablet {
+        padding-left: 44px;
+        background-size: 24px 24px;
+      }
+    }
+
+    .h4 {
+      color: black;
+    }
+  }
+  &__list-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+  }
+  &__button {
+    margin-left: 72px;
+    @include high-desktop {
+      margin-left: 0;
+    }
+    @include mobile {
+      width: 100%;
+      max-width: none;
+      text-align: center;
+    }
+  }
+  &__img {
+    width: calc(50% - 18px);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    @include high-tablet {
+      width: 100%;
+    }
+  }
+}

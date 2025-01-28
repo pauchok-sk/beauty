@@ -1,6 +1,6 @@
 // Fonts
-$font-family: 'GothamPro';
-$font-family-second: 'Inter', sans-serif;
+$font-family: "GothamPro";
+$font-family-second: "Inter", sans-serif;
 
 // Font-weights
 $light: 300;
@@ -17,20 +17,21 @@ $black: 900;
   --content-fluid-width: 1700px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-  --font-family: 'GothamPro';
+  --font-family: "GothamPro";
   --font-family-second: "Inter", sans-serif;
   --white: #fff;
   --white-01: rgba(255, 255, 255, 0.1);
-	--white-02: rgba(255, 255, 255, 0.2);
-	--white-04: rgba(255, 255, 255, 0.4);
-	--white-06: rgba(255, 255, 255, 0.6);
-	--white-005: rgba(255, 255, 255, 0.05);
-	--white-08: rgba(255, 255, 255, 0.8);
+  --white-02: rgba(255, 255, 255, 0.2);
+  --white-04: rgba(255, 255, 255, 0.4);
+  --white-06: rgba(255, 255, 255, 0.6);
+  --white-005: rgba(255, 255, 255, 0.05);
+  --white-08: rgba(255, 255, 255, 0.8);
   --black: #000;
   --blue: #339;
   --tetriary: #069;
   --gray: #bcbcbc;
   --gray2: #5c5c5c;
+  --gray-3: #b8b8ba;
   --gray-bckg: #d6d6d6;
-	--gray-bckg2: #e7e7e7; 
+  --gray-bckg2: #e7e7e7;
 }

@@ -1,4 +1,8 @@
 .instruction {
+  padding-bottom: 80px;
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
   &__wrapper {
     @include high-tablet {
       flex-direction: column-reverse;
@@ -13,6 +17,12 @@
     .h2 {
       @include small-tablet {
         text-align: center;
+      }
+    }
+
+    picture {
+      img {
+        width: 100%;
       }
     }
   }
