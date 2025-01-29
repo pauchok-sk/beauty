@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Главная</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+<header class="header header--white" id="header">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3 gap-sm-4">
+        <div class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/logo-white.svg" alt="logo">
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-3 gap-xxl-4">
+        <nav class="headerNav nav">
+          <ul class="d-flex gap-2 gap-xl-3 gap-xxl-4">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Учебный центр</a></li>
+            <li><a href="#">Сервисный центр</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center gap-3 gap-sm-4">
+          <button class="headerSearchBtn header-action-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search-btn"></use>
+            </svg>
+          </button>
+          <a class="header-fixed-icon d-block d-lg-none" href="tel:84992168208">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#phone"></use>
+            </svg>
+          </a>
+          <a class="header-fixed-icon d-block d-lg-none headerCart" href="#" data-count="5">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="header-fixed" id="header-fixed">
+  <div class="container">
+    <div class="d-flex gap-3 align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3 gap-sm-4">
+        <div class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <a href="#" class="logo logoFixed">
+          <img src="img/admin/logo/logo-white.svg" alt="logo">
+        </a>
+      </div>
+
+      <div class="gap-3 gap-xl-4 gap-xxl-5 justify-content-between header-fixed-nav">
+        <a class="button button--text px-0 text--white mainCatLink" href="#">
+          <span class="text--white">Профессиональное</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </a>
+        <a class="button button--text px-0 text--white mainCatLink" href="#">
+          <span class="text--white">Базовое</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </a>
+        <a class="button button--text px-0 text--white mainCatLink" href="#">
+          <span class="text--white">Косметика</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </a>
+        <a class="button button--text px-0 text--white mainCatLink" href="#">
+          <span class="text--white">Расходники</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </a>
+        <a class="button button--text px-0 text--white mainCatLink" href="#">
+          <span class="text--white">Документация</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-3 gap-sm-4">
+        <button class="header-fixed-icon header-action-btn header-fixed-search-btn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#search-btn"></use>
+          </svg>
+        </button>
+        <a class="header-fixed-icon d-block d-lg-none" href="tel:84992168208">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#phone"></use>
+          </svg>
+        </a>
+        <a class="header-fixed-icon d-block d-lg-none" href="#">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="headerMobMenu">
+  <div class="headerMobMenuHead">
+    <div class="container">
+      <div class="d-flex justify-content-between py-4">
+        <button class="headerNavCloseBtn" type="button">
+          <img src="img/icons/remove-white.svg" alt="close">
+        </button>
+        <div class="d-flex align-items-center gap-3 gap-sm-4">
+          <button class="header-fixed-icon headerMobMenu-search-btn header-action-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search-btn"></use>
+            </svg>
+          </button>
+          <a class="header-fixed-icon d-block d-lg-none" href="tel:84992168208">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#phone"></use>
+            </svg>
+          </a>
+          <a class="header-fixed-icon d-block d-lg-none" href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerMobMenuNavW">
+    <div class="container">
+      <nav class="headerMobMenuNav">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Оборудование</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">Учебный центр</a></li>
+          <li><a href="#">Сервисный центр</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="headerMobMenuContacts">
+    <div class="container">
+      <a href="#" class="logo headerLogo mb-4 mx-auto">
+        <img src="img/admin/logo/logo-white.svg" alt="logo">
+      </a>
+      <a href="tel:84992168208" class="phone mb-3 pb-1">
+        8 (499) 216-82-08
+      </a>
+      <a href="tel:84992168208" class="mail mb-3 pb-1">
+        info@beautysystems.ru
+      </a>
+      <a href="#" class="orderBtn mb-3 pb-1" data-fancybox data-src="#modalOrder">
+        Заказать обратный звонок
+      </a>
+      <div class="socials">
+        <ul class="d-flex justify-content-center gap-3">
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/vk.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/telegram.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/dzen.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/youtube.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/rutube.svg" alt="icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="headerSearch">
+  <div class="container">
+    <div class="searchInputW">
+      <input class="search--radius" type="search" placeholder="Поиск">
+      <div class="searchAction d-flex align-items-center">
+        <button class="removeTextBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#remove"></use>
+          </svg>
+        </button>
+        <button class="removeSearchBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menuMobileFixed">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Каталог</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#events"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Мероприятия</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#study"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Обучение</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#service"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Сервис</span>
+      </a>
+    </div>
+  </div>
+</div>
+      <section class="mainCat mainCat--def d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex gap-2 justify-content-between">
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text-uppercase text--white fw-medium">всё Оборудование</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text--white">Профессиональное</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text--white">Базовое</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text--white">Косметика</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text--white">Расходники</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+      <a class="button button--text px-0 text--white mainCatLink" href="#">
+        <span class="text--white">Документация</span>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+      <main class="main">
+        <section class="intro-lend">
+          <div class="container">
+            <section class="breadcrumbsSect py-0" id="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li>
+                      <a href="#"> Главная </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <a href="#"> Профессиональное оборудование </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <span> Antige </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <div class="intro-lend__head mt-4">
+              <h1 class="h1 intro-lend__head-title">Antige™</h1>
+              <p class="intro-lend__head-content mb-4 md:mb-6">
+                Аппарат для микроигольчатого RF-лифтинга
+              </p>
+              <h3 class="h3 intro-lend__subtitle mb-4 md:mb-5">
+                эффективное решение для <strong>омоложения и лифтинга</strong> премиальный подход и высокая рентабельность для вашей клиники
+              </h3>
+              <button
+                class="button button--blue"
+                data-fancybox
+                data-src="#modalOrder"
+              >
+                Связаться с менеджером
+              </button>
+            </div>
+            <div class="intro-lend__gallery mt-5">
+              <div class="intro-lend__video gap-3">
+                <a
+                  href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                  data-fancybox=""
+                  class="intro-lend__video-rect"
+                >
+                  <img
+                    class="intro-lend__video-img"
+                    src="img/admin/widget/video.png"
+                    alt="image"
+                  />
+                  <div class="intro-lend__video-btn">
+                    <img src="img/icons/play-white.svg" alt="icon" />
+                  </div>
+                </a>
+                <span class="intro-lend__video-content"
+                  >Узнайте об аппарате за 2 минуты</span
+                >
+              </div>
+              <img
+                src="img/banner.jpg"
+                alt="image"
+                class="intro-lend__gallery-img"
+              />
+            </div>
+            <ul class="intro-lend__adv">
+              <li class="intro-lend__adv-item">
+                <img
+                  src="img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Эффективность
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Удаляет все волосы кроме седых на любом фототипе кожи
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">Качество</h5>
+                <p class="intro-lend__adv-content">
+                  Производится в России. <br />
+                  Гарантия 2 года
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Полная документация
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Регистрационное удостоверение <br />
+                  РЗН 2019/9376
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Выбор экспертов
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Лидер продаж 2020-2023 г. <br />
+                  Продано более 1800 аппаратов
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerT">
+      <div class="row pb-0 pb-lg-4">
+        <div class="col-lg-3">
+          <nav class="footerNav">
+            <div class="footerNavTitle">
+              Компания
+            </div>
+            <ul>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Отзывы</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <nav class="footerNav">
+            <div class="footerNavTitle">
+              Покупателям
+            </div>
+            <ul>
+              <li>
+                <a href="#">Оборудование</a>
+              </li>
+              <li>
+                <a href="#">Учебный центр</a>
+              </li>
+              <li>
+                <a href="#">Ближайшие мероприятия</a>
+              </li>
+              <li>
+                <a href="#">Сервисный центр</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <nav class="footerNav">
+            <div class="footerNavTitle">
+              Свяжитесь с нами
+            </div>
+            <ul>
+              <li>
+                <a href="tel:84992168208">8 (499) 216-82-08</a>
+              </li>
+              <li>
+                <a href="maito:info@beautysystems.ru">info@beautysystems.ru</a>
+              </li>
+              <li>
+                <a href="#" data-fancybox data-src="#modalOrder">Заказать обратный звонок</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <nav class="footerNav">
+            <div class="footerNavTitle">
+              Мы в соцсетях
+            </div>
+            <div class="mobileSocialsW">
+              <ul>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center footerSocialsLink" href="#"
+                    target="_blank">
+                    <img src="img/admin/socials/vk.svg" alt="icon">
+                    <span class="h6 mb-0">Вконтакте</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center footerSocialsLink" href="#"
+                    target="_blank">
+                    <img src="img/admin/socials/telegram.svg" alt="icon">
+                    <span class="h6 mb-0">Telegram</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="d-flex flex-column flex-lg-row gap-0 gap-lg-3 mt-0 mt-lg-4">
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center footerSocialsLink" href="#"
+                    target="_blank">
+                    <img src="img/admin/socials/rutube.svg" alt="icon">
+                    <div class="d-flex gap-2 gap-xl-3">
+                      <span class="h6 mb-0">Rutube</span>
+                      <span class="h6 mb-0 d-none d-lg-block">/</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center footerSocialsLink" href="#"
+                    target="_blank">
+                    <img src="img/admin/socials/youtube.svg" alt="icon">
+                    <span class="h6 mb-0">Youtube</span>
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center footerSocialsLink" href="#"
+                    target="_blank">
+                    <img src="img/admin/socials/dzen.svg" alt="icon">
+                    <span class="h6 mb-0">Яндекс Дзен</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </nav>
+        </div>
+      </div>
+      <div class="row mt-0 mt-lg-5">
+        <div class="col-12 d-block d-lg-none">
+          <div class="footerNavTitle">
+            Наше оборудование
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <nav class="footerNav">
+            <div class="footerNavTitle d-none d-lg-block">
+              Наше оборудование
+            </div>
+            <ul>
+              <li>
+                <a href="#">In-Motion D1</a>
+              </li>
+              <li>
+                <a href="#">In-Motion D2</a>
+              </li>
+              <li>
+                <a href="#">Solara X</a>
+              </li>
+              <li>
+                <a href="#">Wattson</a>
+              </li>
+              <li>
+                <a href="#">Dermaxel</a>
+              </li>
+              <li>
+                <a href="#">Antige</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-6 col-lg-3">
+          <nav class="footerNav footerNav--not-title">
+            <ul>
+              <li>
+                <a href="#">Einxel Plus</a>
+              </li>
+              <li>
+                <a href="#">U-One G2</a>
+              </li>
+              <li>
+                <a href="#">Winback</a>
+              </li>
+              <li>
+                <a href="#">Mystic</a>
+              </li>
+              <li>
+                <a href="#">Secret Y</a>
+              </li>
+              <li>
+                <a href="#">Therma Fit</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footerNav mb-0">
+            <div class="footerNavTitle">
+              Наши достижения
+            </div>
+            <ul class="footerWins">
+              <li class="text--white" style="max-width: 440px;">
+                Лучшее предприятие отрасли 2021 / 2023
+              </li>
+              <li class="text--white" style="max-width: 440px;">
+                Участник Московского Инновационного Кластера
+              </li>
+              <li class="text--white" style="max-width: 440px;">
+                Аккредитованный участник госзакупок, номер реестровой записи в ЕРУЗ: 21060389 0001 от 21.07.2021
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+    <div class="footerB">
+      <a href="#" class="footerLogo">
+        <img src="img/admin/logo/logo-white.svg" alt="logo">
+      </a>
+      <div class="text--xs text--white-06 mx-auto text-center" style="max-width: 815px;">
+        ООО "ТД Бьюти Системс». ОГРН: 1187746822702. ИНН: 9718115340. КПП: 770901001. Адрес: Россия, Москва, Щелковское
+        Шоссе, дом 5, стр 1. Номер лицензии на обслуживание медицинской техники: № ФС-99-04-006981 от 25 февраля 2020 г.
+      </div>
+      <div class="d-flex justify-content-center flex-wrap gap-3 gap-lg-4 footerLinks">
+        <a class="text--white-06 text--xs" href="#">Соглашение на обработку персональных данных</a>
+        <a class="text--white-06 text--xs" href="#">Договор оферты</a>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<!-- widgets -->
+<!-- phone  -->
+<button class="widget-phone widget-item" type="button">
+
+  <div class="widget-action">
+    <div class="d-flex gap-2">
+      <a href="#" class="widgetLink bg--blue" target="_blank">
+        <img src="img/admin/socials/wh-white.svg" alt="icon">
+      </a>
+      <a href="#" class="widgetLink bg--blue" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M11.9106 12.1312C11.8561 12.1851 11.803 12.2377 11.7516 12.2886C11.3331 12.7031 11.0244 13.0089 10.9575 13.0828C10.8576 13.1934 10.754 13.3006 10.6458 13.4118C10.6334 13.4245 10.6209 13.4373 10.6084 13.4502C10.514 13.5471 10.4142 13.6495 10.3212 13.7502C10.1203 13.9678 9.8801 14.2504 9.74182 14.5857C9.58487 14.9663 9.56573 15.3988 9.77964 15.8351C9.97064 16.2247 10.3172 16.5537 10.7456 16.8542L10.7457 16.8543C11.3857 17.3031 11.8963 17.6733 12.4111 18.0467L12.4678 18.0878C13.0021 18.4752 13.5454 18.8686 14.2398 19.3535L14.2401 19.3537C14.4101 19.4723 14.5713 19.5946 14.7416 19.7239C14.7766 19.7504 14.812 19.7773 14.8479 19.8044C15.0512 19.9582 15.2717 20.122 15.5007 20.2653C15.9615 20.5535 16.5317 20.8066 17.2225 20.739L11.9106 12.1312ZM11.9106 12.1312C11.1417 12.6801 10.2602 13.3116 9.26591 14.0259M11.9106 12.1312L9.26591 14.0259M9.26591 14.0259C8.57588 14.5306 7.85048 14.8531 7.11101 14.8361C7.11098 14.8361 7.11094 14.8361 7.1109 14.8361L7.12817 14.0863L9.26591 14.0259ZM12.9932 6.58533L12.9934 6.58522C15.1651 5.62387 16.4945 5.05149 17.3571 4.71823C18.2055 4.39045 18.686 4.25864 19.1237 4.25024L19.1252 4.25021C19.2524 4.24802 19.4239 4.26264 19.6047 4.30873C19.7821 4.35396 20.0218 4.44302 20.2342 4.62597L20.2381 4.62931L20.2381 4.62932C20.601 4.94633 20.6791 5.35755 20.7067 5.52L20.709 5.5336L20.7089 5.53362C20.7331 5.69414 20.7683 6.0554 20.7386 6.3704C20.5002 9.04334 19.475 15.4654 18.9571 18.4137C18.8384 19.0941 18.6486 19.6319 18.3719 20.0238C18.0806 20.4365 17.6842 20.6938 17.2226 20.739L12.9932 6.58533ZM12.9932 6.58533C11.4661 7.26203 8.42118 8.65859 3.86415 10.7719M12.9932 6.58533L3.86415 10.7719M3.86415 10.7719C3.47017 10.9394 3.12282 11.1239 2.85614 11.3347C2.6018 11.5357 2.31116 11.8482 2.25943 12.2898L3.86415 10.7719Z"
+            stroke="white" stroke-width="1.5" />
+        </svg>
+      </a>
+      <a href="#" class="widgetLink widgetLink--text bg--blue" data-fancybox data-src="#modalCall">
+        <img src="img/admin/socials/phone-white.svg" alt="icon">
+        <span class="fw-medium">Перезвоните мне</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="widget-phone-btn widget-btn">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#widget-phone"></use>
+    </svg>
+  </div>
+
+</button>
+
+<!-- cart  -->
+<div class="widget-cart widget-item">
+  <div class="widget-action">
+    <div class="widget-cart-content">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#cart-widget"></use>
+      </svg>
+      <span class="widget-cart-count">3 товара</span>
+      <span class="widget-cart-price">1 716 000  руб. </span>
+      <button class="button button--blue widget-cart-content-btn w-100">
+        Оформить
+      </button>
+    </div>
+  </div>
+
+  <div class="widget-cart-btn-w">
+    <div class="widget-cart-btn d-flex align-items-center gap-2 px-3">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#cart-widget"></use>
+      </svg>
+      <span class="">3</span>
+    </div>
+  </div>
+</div>
+
+<!-- widget-catalog -->
+<div class="widget-catalog" data-fancybox data-src="#modalDefault">
+  <img src="img/admin/widget/widget-catalog.png" alt="image" class="widget-catalog-img">
+  <div class="widget-catalog-btn">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#download"></use>
+    </svg>
+  </div>
+  <div class="widget-catalog-text text-center">
+    Скачать каталог
+  </div>
+</div>
+
+<!-- widget-video -->
+<div class="widget-video">
+  <img class="widget-video-img" src="img/admin/widget/video.png" alt="image">
+  <div class="widget-video-btn">
+    <img src="img/icons/play-white.svg" alt="icon">
+  </div>
+  <div class="player widget-video-player">
+    <video id="player-widget" class="" controls="false" preload="none" poster="">
+      <source src="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+        type="video/mp4">
+      <!-- Just add multiple <track> files, they get integrated automatically -->
+    </video>
+    <button class="widget-video-remove">
+      <img src="img/icons/remove-white.svg" alt="icon">
+    </button>
+  </div>
+</div> <!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h2 class="h2 color--white">Оформите заявку</h2>
+    <p class="modalDescr color--white">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <form class="modalForm" action="#">
+
+      <div class="row">
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderName" placeholder="Ваше имя">
+            <label for="modalOrderName">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderPhone"
+              placeholder="Email или Телефон для связи">
+            <label for="modalOrderPhone">Email или Телефон для связи</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="button button--white formBtn width-sm-100 text-nowrap mt-4">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- help -->
+<div class="modal modalHelp p-0" id="modalHelp">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-3">Нужна помощь с выбором оборудования?</h2>
+      <p class="modalDescr color--white text--sm mb-4 pb-2">Оставьте свой номер, и мы перезвоним в течение 15 минут,
+        чтобы
+        ответить на ваши
+        вопросы.
+      </p>
+      <form class="modalForm" action="#">
+
+        <div class="inputW">
+          <input type="tel" class="formInput" id="modalHelpPhone" placeholder="+7 (____) ___ __-__">
+
+        </div>
+
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+
+          </label>
+        </div>
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Получить консультацию
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/help.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- reviews -->
+<div class="modal modalReviews p-2 p-sm-5 bg--gray" id="modalReviews">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalReviewsContent">
+    <div class="modalReviewsText p-4 p-sm-5 order-2 order-sm-1">
+      <div class="content">
+        <p>
+          Инновационная платформа Дермаксель представляет широкие возможности для работы в гинекологии и, особенно, в
+          эстетической гинекологии. Благодаря двум видам насадок для интравагинального воздействия мы можем проводить
+          фракционной фототермолиз как при стрессовом недержании мочи, так и при генитоуринарном синдроме в менопаузе
+          или при лактационной аменореи, а также при синдроме растянутого влагалища и опущении стенок влагалища 1 ст.
+          Технология позволяет сочетать разные режимы и менять параметры индивидуально в зависимости от заболеваний.
+        </p>
+        <p>
+          Благодаря персональным протоколам можно проводить минимально инвазивное лечение при сочетании функциональных и
+          эстетических проблем. Большой выбор различных лазерных импульсов позволяет выполнять не только фракционный
+          фототермолиз, но также выполнять хирургические манипуляции: разделение спаек вульвы, удаление новообразований
+          и др.
+        </p>
+        <p>
+          За счёт импульса, максимально щадяще воздействующего на ткани, заживление происходит в более короткие сроки,
+          чем при других видах энергетического воздействия, в том числе и лазерами других производителей. Сама платформа
+          очень компактная, легкая и мобильная. Могу сказать с полной уверенностью, что данная лазерная платформа
+          является наиболее востребованной среди гинекологов и дерматологов-косметологов.
+        </p>
+        <h6 class="h6 mb-1 text--black">
+          Достоинства:
+        </h6>
+        <p class="mb-3">
+          Профессионализм
+        </p>
+        <h6 class="h6 mb-1 text--black">
+          Недостатки
+        </h6>
+        <p>
+          Нет недостатков
+        </p>
+
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row mt-4 gap-1 gap-sm-3 order-1 order-sm-2">
+      <img src="img/admin/reviews/image-1.jpeg" alt="image" class="modalReviewsImg">
+      <div class="modalReviewsEdu">
+        <div class="modalReviewsEduTitle mb-2">
+          Аполихина Инна Анатольевна
+        </div>
+        <div class="content">
+          <p>
+            Д.м.н., профессор, заведующая отделением Эстетической гинекологии и реабилитации ФГБУ
+          </p>
+          <p>
+            "Национальный медицинский исследовательский центр акушерства, гинекологии и
+            перинатологии им. В.И. Кулакова" Минздрава России
+          </p>
+          <p>
+            Профессор кафедры акушерства, гинекологии, перинатологии и репродуктологии ИПО
+          </p>
+          <p>
+            ФГАОУ ВО Первый МГМУ им. И.М. Сеченова МЗ России (Сеченовский Университет)
+          </p>
+          <p>
+            Профессор кафедры акушерства и гинекологии ДПО ФГБУ «НМИЦ АГП им. В.И.
+          </p>
+          <p>
+            Кулакова» МЗ России.
+          </p>
+          <p>
+            Президент Ассоциации специалистов по эстетической гинекологии (АСЭГ)
+          </p>
+          <p>
+            Президент Европейской ассоциации генитальной эстетической медицины и пластической
+            хирургии (EAGAMPS)
+          </p>
+          <h5 class="h5 text-uppercase text--black fw-medium">
+            г. Москва
+          </h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- authorize -->
+<div class="modal modalAuthorize p-0" id="modalAuthorize">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <div class="mb-4 pb-3">
+      <h3 class="h3 fw-normal text-uppercase text--white text-center">
+        Войдите, чтобы комменТИровать:
+      </h3>
+    </div>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/yandex.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/google.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/vk-color.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/ok-color.svg" alt="icon">
+      </a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- logout -->
+<div class="modal modalLogout p-0" id="modalLogout">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <div class="mb-4 pb-3">
+      <h3 class="h3 fw-normal text-uppercase text--white text-center">
+        Выйти из аккаунта?
+      </h3>
+    </div>
+    <div class="d-flex justify-content-center gap-2 flex-column flex-sm-row">
+      <button class="button button--white">
+        Сменить аккаунт
+      </button>
+      <button class="button button--blue">
+        Выйти
+      </button>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- modalVideoReview -->
+<div class="modal modalReviewVideo p-0" id="modalReviewVideo">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xlIClSDvCY0?si=q7AfdFro3XGu3lTX"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="h4 text--white text-uppercase mb-3 pb-1">
+      От мастера маникюра до собственной клиники | ЛЭ это прибыльно
+    </div>
+    <p class="text--white">
+      От мастера маникюра до собственной клиники | ЛЭ это прибыльно От мастера маникюра до собственной клиники | ЛЭ это
+      прибыльно От мастера маникюра до собственной клиники | ЛЭ это прибыльно
+    </p>
+  </div>
+</div>
+
+<!-- catalog -->
+<div class="modal modalCatalog bg--black" id="modalCatalog">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <div class="mb-3 pb-1">
+      <h3 class="h3 mb-0 fw-bold text-uppercase text--white text-start">
+        Получить каталог
+      </h3>
+    </div>
+
+    <div class="inputW">
+      <input type="tel" class="formInput formInput--bg-white-005" placeholder="Ваш телефон">
+    </div>
+    <div class="agreement mt-4">
+      <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+      <label class="checkboxLabel align-items-start" for="catalogGet_form">
+        <span class="rect rect--gray2 position-static"></span>
+        <div class="agreementText text--sm text--white">
+          Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+        </div>
+      </label>
+    </div>
+    <button class="button button--blue mt-4 w-100">
+      Отправить
+    </button>
+  </div>
+</div>
+
+<!-- call -->
+<div class="modal modalCall bg--black" id="modalCall">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <div class="mb-3 pb-1">
+      <h3 class="h3 mb-0 fw-bold text-uppercase text--white text-start">
+        Перезвоните мне
+      </h3>
+    </div>
+    <p class="modalDescr text--white mb-4 pb-2">Наш менеджер свяжется с Вами в течение часа для консультации.
+    </p>
+
+    <div class="inputW">
+      <input type="tel" class="formInput formInput--bg-white-005" placeholder="Ваш телефон">
+    </div>
+    <div class="agreement mt-4">
+      <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+      <label class="checkboxLabel align-items-start" for="catalogGet_form">
+        <span class="rect rect--gray2 position-static"></span>
+        <div class="agreementText text--sm text--white">
+          Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+        </div>
+      </label>
+    </div>
+    <button class="button button--blue mt-4 w-100">
+      Отправить
+    </button>
+  </div>
+</div>
+
+<!-- price -->
+<div class="modal modalDefault p-0" id="modalDefault">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Получите каталог оборудования в течение 5
+        минут!</h2>
+
+      <form class="modalForm" action="#">
+
+        <div class="inputW">
+          <input type="tel" class="formInput formInput--bg-white-005" id="modalHelpPhone"
+            placeholder="+7 (____) ___ __-__">
+        </div>
+
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+
+          </label>
+        </div>
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Скачать каталог
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/catalog.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- subscribe -->
+<div class="modal modalDefault p-0" id="modalSubscribe">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Добро пожаловать!</h2>
+      <p class="modalDescr color--white mb-4 pb-2">Подпишитесь на рассылку и получайте каждую неделю эксклюзивные
+        материалы для косметологов и врачей. Будьте в курсе последних тенденций!
+      </p>
+      <form class="modalForm" action="#">
+
+        <div class="inputW">
+          <input type="email" class="formInput formInput--bg-white-005" id="modalHelpPhone" placeholder="Email">
+        </div>
+
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Получать материалы
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- learn -->
+<div class="modal modalDefault p-0" id="modalWebinar">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Хотите узнать …?</h2>
+      <p class="modalDescr color--white mb-4">
+        Зарегистрируйтесь на бесплатный вебинар
+      </p>
+      <div class="text--xxl text--xxl-sm-lg fw-medium mb-4">
+        Команда мечты в бьюти-индустрии
+      </div>
+      <form class="modalForm" action="#">
+
+
+        <div class="d-flex flex-wrap gap-2">
+          <div class="text--xs modalTag fw-medium">
+            14 августа
+          </div>
+          <div class="text--xs modalTag">
+            12:00 (МСК)
+          </div>
+        </div>
+
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/webinar.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- spec -->
+<div class="modal modalDefault p-0" id="modalSpec">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <div class="d-flex gap-2">
+        <span class="h3">🔥</span>
+        <h2 class="h3 color--white text-uppercase mb-2"> Специальное предложение!</h2>
+      </div>
+
+      <p class="text-lg text-lg-sm-md color--white mb-4">
+        Оставьте заявку сегодня и получите <strong>3% скидку</strong> на покупку аппарата <strong>«Antige»</strong>
+      </p>
+
+      <form class="modalForm" action="#">
+        <div class="inputW">
+          <input type="tel" class="formInput formInput--bg-white-005" id="modalHelpPhone"
+            placeholder="+7 (____) ___ __-__">
+        </div>
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- thanks -->
+<div class="modal modalDefault p-0" id="modalThanks">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <div class="d-flex gap-2">
+        <h2 class="h3 color--white text-uppercase mb-2"> Спасибо!</h2>
+      </div>
+      <div class="text-lg text-lg-sm-md mb-6 mb-6-sm-40">
+        Мы скоро с Вами свяжемся!
+      </div>
+      <div class="h5 text-uppercase fw-medium mb-3">
+        Время работы отдела продаж:
+      </div>
+      <div class="text-xl text-xl-sm-md mb-4 pb-3">
+        Пн-Пт с 09.00 до 19.00 (по Москве)
+      </div>
+      <div class="h5 text-uppercase fw-medium mb-4">
+        Подпишитесь на наши соц. сети:
+      </div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/vk.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/telegram.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/dzen.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/youtube.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/rutube.svg" alt="icon">
+        </a>
+      </div>
+
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
