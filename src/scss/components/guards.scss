@@ -1,0 +1,120 @@
+.guards {
+  padding: 80px 0px;
+  background-color: var(--gray-bckg);
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+
+  .h3,
+  .h5 {
+    color: black;
+  }
+  ._hidden-mob {
+    @include high-tablet {
+      display: none;
+    }
+  }
+  &__content {
+    max-width: 960px;
+    text-align: center;
+    margin: 0px auto 60px auto;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+    @include high-tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  &__item {
+    grid-column: 6 span;
+  }
+  &__article {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__article-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &__video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 650px;
+    margin-top: 60px;
+    z-index: 1;
+
+    @include hover {
+      .guards__video-btn {
+        transform: scale(1.07);
+      }
+    }
+    @include big-desktop {
+      height: 500px;
+    }
+    @include high-desktop {
+      height: 450px;
+    }
+    @include high-tablet {
+      height: 380px;
+    }
+    @include small-tablet {
+      height: 320px;
+      margin-top: 40px;
+    }
+    @include mobile {
+      height: 290px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+  }
+  &__video-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 165px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--white-06);
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    z-index: 1;
+    @include high-tablet {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &__video-icon {
+    width: 60px;
+    transform: translateX(5px); 
+    @include high-tablet {
+      width: 20px;
+    }
+  }
+}

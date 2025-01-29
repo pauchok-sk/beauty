@@ -35,14 +35,6 @@
     }
   }
   &__form {
-    .formInput {
-      border-color: var(--gray2);
-      background-color: var(--white-005);
-      color: white;
-    }
-    .rect {
-      border-color: var(--gray2);
-    }
 
     .button {
       @media (max-width: 480px) {

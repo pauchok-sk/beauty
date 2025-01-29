@@ -1,0 +1,30 @@
+.practice {
+  overflow: hidden;
+  color: white;
+  &__slider {
+    margin-bottom: 60px;
+    @include high-tablet {
+      overflow: visible !important;
+    }
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+
+    .swiper-slide {
+      @include high-tablet {
+        width: 380px !important;
+
+        .caseItemImgW {
+          height: 215px;
+        }
+        .caseItemImg, img {
+          height: 100%;
+          display: block;
+        }
+      }
+      @media (max-width: 420px) {
+        width: 320px !important;
+      }
+    }
+  }
+}
