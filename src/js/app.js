@@ -922,6 +922,28 @@ if (advantagesSlider) {
   });
 }
 
+const fabriatorSlider = document.querySelector(".fabricator__slider");
+
+if (fabriatorSlider && window.matchMedia("(max-width: 991px)").matches) {
+  const swiper = new Swiper(fabriatorSlider, {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    autoHeight: true,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".fabricator .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".fabricator .navArrowNext",
+      prevEl: ".fabricator .navArrowPrev",
+    },
+  });
+}
+
 const mediaQueryMin992 = window.matchMedia("(min-width: 992px)");
 if (mediaQueryMin992.matches) {
   // Инициализация слайдера reviewsSliderSm
