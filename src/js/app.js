@@ -1301,3 +1301,4 @@ widgetVideo.addEventListener("click", () => {
   let playerCaptions = document.querySelector("#player-widget");
   playerCaptions.play();
 });
+

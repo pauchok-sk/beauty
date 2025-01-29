@@ -178,6 +178,17 @@ table {
       color: var(--black);
     }
   }
+  &--simple {
+    border-color: var(--gray);
+    background-color: var(--white-02);
+    color: black;
+    &:focus {
+      color: var(--black);
+    }
+    &::placeholder {
+      color: var(--gray2);
+    }
+  }
 }
 
 .searchAction {

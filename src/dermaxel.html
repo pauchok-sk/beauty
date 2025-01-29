@@ -694,7 +694,7 @@
                   <h2 class="h2 fw-medium mb-5 text-center text-sm-start">
                     Оставить заявку на DERMAXEL
                   </h2>
-                  <div class="form">
+                  <form action="#">
                     <div class="inputW mb-2 mb-sm-3">
                       <input
                         type="text"
@@ -751,7 +751,7 @@
                     >
                       Отправить
                     </button>
-                  </div>
+                  </form>
                 </div>
               </div>
               <div class="col-lg-6 mt-4 mt-lg-0">
@@ -880,6 +880,9 @@
           </div>
         </section>
         @@include('html/promo.html',{})
+        @@include('html/leasing.html',{})
+        @@include('html/documents.html',{}) 
+        @@include('html/adv.html',{})
       </main>
       @@include('html/footer.html',{}) @@include('html/modal.html',{})
     </div>

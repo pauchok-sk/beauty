@@ -1,0 +1,74 @@
+.leasing {
+  padding: 80px 0px;
+  background-color: var(--gray);
+  @include small-tablet {
+    padding: 60px 0px 20px 0px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    @include high-tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 1;
+  }
+  &__item {
+    padding-left: 72px;
+    background: url("@img/check-circle.svg") 0 0 / 32px auto no-repeat;
+    @include small-tablet {
+      padding-left: 44px;
+      background-size: 24px auto;
+    }
+  }
+  &__item-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+  }
+  &__rect {
+    padding: 40px;
+    margin-top: 60px;
+    border: 1px solid var(--gray2);
+    @media (max-width: 420px) {
+      padding: 20px;
+    }
+
+    .button {
+      br {
+        display: none;
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
+  &__rect-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  &__img {
+    width: 670px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    @include big-desktop {
+      width: 580px;
+    }
+    @include high-desktop {
+      width: 405px;
+    }
+    @include high-tablet {
+      width: 100%;
+    }
+  }
+}
