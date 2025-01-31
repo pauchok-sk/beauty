@@ -1038,6 +1038,33 @@ if (specificationsSlider) {
     },
   });
 }
+const introLendSlider = document.querySelector(".intro-lend__slider");
+
+if (introLendSlider) {
+  const swiper = new Swiper(introLendSlider, {
+    slidesPerView: 2,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".intro-lend .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".intro-lend .navArrowNext",
+      prevEl: ".intro-lend .navArrowPrev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
 
 
 const mediaQueryMin992 = window.matchMedia("(min-width: 992px)");

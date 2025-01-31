@@ -64,6 +64,23 @@
         letter-spacing: normal;
       }
     }
+    ul {
+      li {
+        position: relative;
+        padding-left: 24px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: currentColor;
+          left: 10px;
+          top: 10px;
+        }
+      }
+    }
   }
   &__gallery {
     flex: 0 1 785px;

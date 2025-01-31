@@ -3,6 +3,14 @@
   @include small-tablet {
     padding-bottom: 60px;
   }
+
+  &._white {
+    background-color: var(--gray-bckg2);
+
+    .instruction__info {
+      border-color: var(--gray2);
+    }
+  }
   &__wrapper {
     @include high-tablet {
       flex-direction: column-reverse;
@@ -11,7 +19,7 @@
   }
   &__info {
     border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 40px;
+    padding: 39px;
     color: white;
 
     .h2 {
@@ -20,6 +28,15 @@
       }
     }
 
+    &._fit {
+      height: fit-content;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      @include small-tablet {
+        padding: 39px;
+      }
+    }
+    
     picture {
       img {
         width: 100%;
@@ -50,6 +67,14 @@
 
     @include high-tablet {
       width: 100%;
+    }
+
+    &._auto {
+      aspect-ratio: auto;
+      height: auto;
+      @include small-tablet {
+        aspect-ratio: 1/1;
+      }
     }
   }
 }
