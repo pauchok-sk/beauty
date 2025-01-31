@@ -1,0 +1,66 @@
+.parameters-gallery {
+  padding: 80px 0px;
+  color: white;
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+
+    li {
+      position: relative;
+
+      font-size: 24px;
+      line-height: 36px;
+      padding-left: 28px;
+      @include small-tablet {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: currentColor;
+        left: 0;
+        top: 14px;
+        @include small-tablet {
+          top: 8px;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 670px;
+    height: 470px;
+    object-fit: cover;
+    @include big-desktop {
+      width: 580px;
+    }
+    @include high-desktop {
+      width: 400px;
+    }
+    @include high-tablet {
+      width: 580px;
+    }
+    @include small-tablet {
+      height: 300px;
+    }
+    @include mobile {
+      height: 290px;
+    }
+  }
+}

@@ -6,6 +6,20 @@
   &._training {
     padding: 120px 0px;
   }
+  &._offer {
+    padding: 160px 0px 120px 0px;
+    background: var(--gray-bckg2) !important;
+
+    .discount__bg {
+      @include high-desktop {
+        object-position: top 0 right -250px;
+      }
+      @include high-tablet {
+        object-position: right;
+        height: 340px;
+      }
+    }
+  }
   @include high-tablet {
     padding: 40px 0px 400px 0px;
     background: linear-gradient(
@@ -20,6 +34,9 @@
 
     &._training {
       padding: 40px 0px 470px 0px;
+    }
+    &._offer {
+      padding: 40px 0px 380px 0px;
     }
   }
   &__bg {
@@ -59,6 +76,17 @@
 
     &._big {
       max-width: 695px;
+
+      .discount__content {
+        max-width: none;
+      }
+    }
+    &._middle {
+      max-width: 695px;
+
+      @include big-desktop {
+        max-width: 520px;
+      }
 
       .discount__content {
         max-width: none;

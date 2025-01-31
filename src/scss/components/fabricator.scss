@@ -116,6 +116,9 @@
   &__video-icon {
     width: 30px;
     transform: translateX(3px);
+    @include small-tablet {
+      width: 20px;
+    }
   }
   &__article-content {
     font-size: 16px;
