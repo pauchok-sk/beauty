@@ -1041,8 +1041,10 @@ if (specificationsSlider) {
 const introLendSlider = document.querySelector(".intro-lend__slider");
 
 if (introLendSlider) {
+  const isFullMobile = introLendSlider.classList.contains("_auto-mobile");
+
   const swiper = new Swiper(introLendSlider, {
-    slidesPerView: 2,
+    slidesPerView: isFullMobile ? "auto" : 2,
     speed: 800,
     autoplay: {
       delay: 5000,

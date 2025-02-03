@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/header-white.html',{})
+      @@include('html/cat-default.html',{})
+      <main class="main">
+        <section class="intro-lend">
+          <div class="container">
+            <section class="breadcrumbsSect py-0" id="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li>
+                      <a href="#"> Главная </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <a href="#"> Профессиональное оборудование </a>
+                    </li>
+                    <li>
+                      <span class="sep"> / </span>
+                    </li>
+                    <li>
+                      <span> Antige </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <div class="intro-lend__head mt-4">
+              <h1 class="h1 intro-lend__head-title">Winback 3SE™</h1>
+              <p class="intro-lend__head-content mb-4 md:mb-6">
+                Аппарат текар-терапии
+              </p>
+              <h3 class="h3 intro-lend__subtitle mb-4 md:mb-5">
+                единственный аппарат текар-терапии с тремя <br />
+                частотами (от 300 кГц до 1 мГц)
+                <strong
+                  >для глубокого <br />
+                  воздействия</strong
+                >
+                на ткани, связки и суставы.
+              </h3>
+              <button
+                class="button button--blue"
+                data-fancybox
+                data-src="#modalOrder"
+              >
+                Связаться с менеджером
+              </button>
+            </div>
+            <div class="intro-lend__gallery mt-5">
+              <div class="intro-lend__video gap-3">
+                <a
+                  href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                  data-fancybox=""
+                  class="intro-lend__video-rect"
+                >
+                  <img
+                    class="intro-lend__video-img"
+                    src="@img/admin/widget/video.png"
+                    alt="image"
+                  />
+                  <div class="intro-lend__video-btn">
+                    <img src="@img/icons/play-white.svg" alt="icon" />
+                  </div>
+                </a>
+                <span class="intro-lend__video-content"
+                  >Узнайте об аппарате за 2 минуты</span
+                >
+              </div>
+              <img
+                src="@img/banner.jpg"
+                alt="image"
+                class="intro-lend__gallery-img"
+              />
+            </div>
+            <ul class="intro-lend__adv">
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Эффективность
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Удаляет все волосы кроме седых на любом фототипе кожи
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">Качество</h5>
+                <p class="intro-lend__adv-content">
+                  Производится в России. <br />
+                  Гарантия 2 года
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Полная документация
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Регистрационное удостоверение <br />
+                  РЗН 2019/9376
+                </p>
+              </li>
+              <li class="intro-lend__adv-item">
+                <img
+                  src="@img/like.svg"
+                  alt="icon"
+                  class="intro-lend__adv-icon mb-4"
+                />
+                <h5 class="intro-lend__adv-title mb-3 md:mb-2">
+                  Выбор экспертов
+                </h5>
+                <p class="intro-lend__adv-content">
+                  Лидер продаж 2020-2023 г. <br />
+                  Продано более 1800 аппаратов
+                </p>
+              </li>
+            </ul>
+            <div class="intro-lend__line"></div>
+            <p class="intro-lend__slider-content">
+              Предложите вашим пациентам эффективное решение широкого спектра
+              задач в реабилитации и эстетике 
+            </p>
+            <div class="swiper intro-lend__slider _auto-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    РЕАБИЛИТАЦИЯ
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Снятие болевого синдрома</li>
+                    <li>Противовоспалительная терапия</li>
+                    <li>Восстановление подвижности</li>
+                    <li>Укрепление мышц</li>
+                    <li>
+                      Восстановление после травм или хирургических вмешательств
+                    </li>
+                    <li>
+                      Улучшение состояния при артрозе, артрите, сколиозе, грыже,
+                      протрузии, радикулите.
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    ЭСТЕТИЧЕСКАЯ МЕДИЦИНА
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Ускорение реабилитации после пластических операций</li>
+                    <li>Омоложение кожи, повышение её тонуса</li>
+                    <li>Коррекция фигуры, уменьшение объёмов тела</li>
+                    <li>Борьба с целлюлитом</li>
+                    <li>
+                      Устранение растяжек
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    РЕАБИЛИТАЦИЯ
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Снятие болевого синдрома</li>
+                    <li>Противовоспалительная терапия</li>
+                    <li>Восстановление подвижности</li>
+                    <li>Укрепление мышц</li>
+                    <li>
+                      Восстановление после травм или хирургических вмешательств
+                    </li>
+                    <li>
+                      Улучшение состояния при артрозе, артрите, сколиозе, грыже,
+                      протрузии, радикулите.
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    ЭСТЕТИЧЕСКАЯ МЕДИЦИНА
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Ускорение реабилитации после пластических операций</li>
+                    <li>Омоложение кожи, повышение её тонуса</li>
+                    <li>Коррекция фигуры, уменьшение объёмов тела</li>
+                    <li>Борьба с целлюлитом</li>
+                    <li>
+                      Устранение растяжек
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    РЕАБИЛИТАЦИЯ
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Снятие болевого синдрома</li>
+                    <li>Противовоспалительная терапия</li>
+                    <li>Восстановление подвижности</li>
+                    <li>Укрепление мышц</li>
+                    <li>
+                      Восстановление после травм или хирургических вмешательств
+                    </li>
+                    <li>
+                      Улучшение состояния при артрозе, артрите, сколиозе, грыже,
+                      протрузии, радикулите.
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    ЭСТЕТИЧЕСКАЯ МЕДИЦИНА
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Ускорение реабилитации после пластических операций</li>
+                    <li>Омоложение кожи, повышение её тонуса</li>
+                    <li>Коррекция фигуры, уменьшение объёмов тела</li>
+                    <li>Борьба с целлюлитом</li>
+                    <li>
+                      Устранение растяжек
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    РЕАБИЛИТАЦИЯ
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Снятие болевого синдрома</li>
+                    <li>Противовоспалительная терапия</li>
+                    <li>Восстановление подвижности</li>
+                    <li>Укрепление мышц</li>
+                    <li>
+                      Восстановление после травм или хирургических вмешательств
+                    </li>
+                    <li>
+                      Улучшение состояния при артрозе, артрите, сколиозе, грыже,
+                      протрузии, радикулите.
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    ЭСТЕТИЧЕСКАЯ МЕДИЦИНА
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Ускорение реабилитации после пластических операций</li>
+                    <li>Омоложение кожи, повышение её тонуса</li>
+                    <li>Коррекция фигуры, уменьшение объёмов тела</li>
+                    <li>Борьба с целлюлитом</li>
+                    <li>
+                      Устранение растяжек
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    РЕАБИЛИТАЦИЯ
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Снятие болевого синдрома</li>
+                    <li>Противовоспалительная терапия</li>
+                    <li>Восстановление подвижности</li>
+                    <li>Укрепление мышц</li>
+                    <li>
+                      Восстановление после травм или хирургических вмешательств
+                    </li>
+                    <li>
+                      Улучшение состояния при артрозе, артрите, сколиозе, грыже,
+                      протрузии, радикулите.
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="@img/body.svg"
+                    alt="icon"
+                    class="intro-lend__slide-icon mb-4"
+                  />
+                  <h5 class="h5 fw-medium text-center text-uppercase mb-2">
+                    ЭСТЕТИЧЕСКАЯ МЕДИЦИНА
+                  </h5>
+                  <ul class="intro-lend__slide-list">
+                    <li>Ускорение реабилитации после пластических операций</li>
+                    <li>Омоложение кожи, повышение её тонуса</li>
+                    <li>Коррекция фигуры, уменьшение объёмов тела</li>
+                    <li>Борьба с целлюлитом</li>
+                    <li>
+                      Устранение растяжек
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button
+                class="navArrow navArrow--white navArrowPrev d-none d-sm-flex"
+              >
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                </svg>
+              </button>
+              <div class="swiper-pagination swiper-pagination--white"></div>
+              <button
+                class="navArrow navArrow--white navArrowNext d-none d-sm-flex"
+              >
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/footer.html',{}) @@include('html/modal.html',{})
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

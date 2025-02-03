@@ -1,5 +1,6 @@
 .intro-lend {
   color: white;
+  overflow: hidden;
   padding-bottom: 85px;
   @include high-tablet {
     padding-bottom: 100px;
@@ -204,11 +205,31 @@
   }
   &__slider {
     margin-bottom: 40px;
+    @include high-tablet {
+      overflow: visible !important;
+
+      &._auto-mobile {
+        .swiper-slide {
+          width: 380px !important;
+        }
+      }
+    }
+    @media (max-width: 420px) {
+      &._auto-mobile {
+        .swiper-slide {
+          width: 320px !important;
+        }
+      }
+    }
+    .swiper-slide {
+      align-items: stretch;
+    }
     .swiper-slide {
       display: flex !important;
       align-items: center;
       flex-direction: column;
       text-align: center;
+      height: auto !important;
       &:not(:last-child) {
         border-right: 1px solid var(--white-01);
       }
@@ -220,5 +241,30 @@
   }
   &__slide-icon {
     width: 80px;
+  }
+  &__slide-list {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    text-align: start;
+    padding: 0 24px;
+    @include high-tablet {
+      padding: 0 10px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: currentColor;
+        border-radius: 50%;
+        left: 10px;
+        top: 8px;
+      }
+    }
   }
 }
