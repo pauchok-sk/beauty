@@ -1066,6 +1066,38 @@ if (introLendSlider) {
   });
 }
 
+const applySlider = document.querySelector(".apply__slider");
+
+if (applySlider) {
+  const swiper = new Swiper(applySlider, {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 800,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: document.querySelector(".apply .swiper-pagination"),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".apply .navArrowNext",
+      prevEl: ".apply .navArrowPrev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    },
+  });
+}
+
 
 const mediaQueryMin992 = window.matchMedia("(min-width: 992px)");
 if (mediaQueryMin992.matches) {

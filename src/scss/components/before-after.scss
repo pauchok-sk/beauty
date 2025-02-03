@@ -65,6 +65,9 @@
       }
     }
     ul {
+      @include high-desktop {
+        text-align: start;
+      }
       li {
         position: relative;
         padding-left: 24px;

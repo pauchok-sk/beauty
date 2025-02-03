@@ -1,0 +1,114 @@
+.history-apparat {
+  padding: 80px 0px;
+  background-color: var(--gray-bckg);
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__content {
+    font-size: 20px;
+    line-height: 30px;
+    @include small-tablet {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__item {
+    margin-top: 60px;
+    @include small-tablet {
+      margin-top: 40px;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__item-head {
+    margin-bottom: 60px;
+    @include small-tablet {
+      margin: 40px 0px 0px 0px;
+
+      .h3 {
+        color: var(--blue) !important;
+      }
+    }
+  }
+  &__item-wrapper {
+    display: flex;
+    gap: 20px;
+    @include high-desktop {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+  }
+  &__item-content {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+
+    @include small-tablet {
+      padding: 0;
+      margin-top: 20px;
+
+      &._hidden-mob {
+        display: none;
+      }
+    }
+
+    p, ul {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: currentColor;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__content-mobile {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__item-img {
+    width: 670px;
+    height: 480px;
+    object-fit: cover;
+    @include big-desktop {
+      width: 505px;
+      height: 360px;
+    }
+    @include high-desktop {
+      order: 1;
+      margin-bottom: 24px;
+      width: 100%;
+      height: 500px;
+    }
+    @include high-tablet {
+      height: 380px;
+    }
+    @include small-tablet {
+      height: 290px;
+    }
+    @media (max-width: 420px) {
+      height: 240px;
+    }
+  }
+}

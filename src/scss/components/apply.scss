@@ -1,0 +1,44 @@
+.apply {
+  padding: 80px 0px;
+  color: white;
+  overflow: hidden;
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__slider {
+    @include small-tablet {
+      overflow: visible;
+      margin-bottom: 60px;
+    }
+    .swiper-slide {
+      @include small-tablet {
+        width: 380px !important;
+      }
+      @media (max-width: 420px) {
+        width: 320px !important;
+      }
+    }
+  }
+  &__slide-img {
+    border-radius: 40px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 40px;
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

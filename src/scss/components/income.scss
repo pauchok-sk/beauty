@@ -31,6 +31,17 @@
     position: relative;
     z-index: 1;
     margin-bottom: 64px;
+
+    &._einxel {
+      @include high-desktop {
+        .income__gallery-img {
+          height: 240px;
+        }
+        .income__gallery-info {
+          background-color: #5EC5CF;
+        }
+      }
+    }
   }
   &__gallery-img {
     position: absolute;
@@ -115,6 +126,9 @@
   }
   &__price-title {
     font-weight: 500;
+    @include small-tablet {
+      letter-spacing: 1.6px;
+    }
   }
   &__price-content {
     font-size: 14px;

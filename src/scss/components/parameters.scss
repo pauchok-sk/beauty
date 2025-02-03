@@ -29,7 +29,6 @@
       align-items: center;
       border-bottom: 1px solid var(--gray2);
       @include high-tablet {
-        gap: 20px;
       }
 
       &._hidden {
@@ -37,19 +36,35 @@
       }
     }
     span {
+      position: relative;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.32px;
       flex: 1;
       padding: 16px 0px;
 
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--gray2);
+      }
+
       &:first-child {
-        border-right: 1px solid var(--gray2);
+        &::before {
+          right: -1px;
+        }
       }
       &:last-child {
         font-weight: 500;
         letter-spacing: 0.8px;
         text-align: right;
+        padding-left: 20px;
+        &::before {
+          left: 0;
+        }
       }
 
       @include high-tablet {
@@ -58,8 +73,11 @@
         letter-spacing: 0.6px;
 
         &:first-child {
-          border-right: none;
           flex: none;
+        }
+
+        &::before {
+          display: none;
         }
       }
     }

@@ -93,8 +93,12 @@
       }
     }
   }
+  &__subtitle {
+    color: var(--blue);
+  }
   &__title {
     color: black;
+    font-weight: 500;
     span {
       color: var(--blue);
     }
@@ -133,5 +137,47 @@
     width: 20px;
     height: 20px;
     fill: var(--blue);
+  }
+  &__list {
+    li {
+      position: relative;
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 30px;
+      @include small-tablet {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        padding-left: 24px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: currentColor;
+        border-radius: 50%;
+        left: 12px;
+        top: 12px;
+
+        @include small-tablet {
+          width: 4px;
+          height: 4px;
+          left: 10px;
+          top: 10px;
+        }
+      }
+    }
+  }
+  &__subcontent {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    @include small-tablet {
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.24px;
+    }
   }
 }
