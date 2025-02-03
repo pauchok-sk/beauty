@@ -20,6 +20,35 @@
       }
     }
   }
+  &._g2 {
+    padding: 135px 0px 200px 0px;
+
+    @include high-tablet {
+      background: #e7e5e5;
+      padding: 40px 0px 360px 0px;
+    }
+
+    .discount__info {
+      max-width: 555px;
+    }
+    .discount__content {
+      max-width: none;
+      @include small-tablet {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+    }
+    .discount__bg {
+      @include big-desktop {
+        object-position: bottom 0 right -320px;
+      }
+      @include high-tablet {
+        object-position: top 0 right 0;
+        height: 320px;
+      }
+    }
+  }
   @include high-tablet {
     padding: 40px 0px 400px 0px;
     background: linear-gradient(

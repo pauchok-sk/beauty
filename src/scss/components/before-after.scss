@@ -14,6 +14,20 @@
       margin-bottom: 40px;
     }
   }
+  &__content-top {
+    max-width: 615px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 60px;
+
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      letter-spacing: 0.28px;
+    }
+  }
   &__subcontent {
     font-size: 16px;
     line-height: 24px;

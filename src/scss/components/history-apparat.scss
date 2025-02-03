@@ -34,7 +34,11 @@
       margin: 40px 0px 0px 0px;
 
       .h3 {
-        color: var(--blue) !important;
+        @include small-tablet {
+          &._hidden-mob {
+            color: var(--blue) !important;
+          }
+        }
       }
     }
   }
@@ -58,6 +62,12 @@
 
       &._hidden-mob {
         display: none;
+      }
+    }
+
+    p {
+      @include small-tablet {
+        text-align: center;
       }
     }
 

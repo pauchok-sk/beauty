@@ -1069,6 +1069,19 @@ if (introLendSlider) {
 const applySlider = document.querySelector(".apply__slider");
 
 if (applySlider) {
+  const numberSlides = +applySlider.dataset.slides;
+
+  const breakpoints = {
+    1200: {
+      slidesPerView: numberSlides || 3,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  }
+
   const swiper = new Swiper(applySlider, {
     slidesPerView: "auto",
     spaceBetween: 20,
@@ -1085,16 +1098,7 @@ if (applySlider) {
       nextEl: ".apply .navArrowNext",
       prevEl: ".apply .navArrowPrev",
     },
-    breakpoints: {
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      }
-    },
+    breakpoints
   });
 }
 
