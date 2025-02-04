@@ -14,6 +14,20 @@
       margin-bottom: 40px;
     }
   }
+  &__head-content {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 960px;
+    text-align: center;
+    margin: 0px auto 60px auto;
+
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.28px;
+      margin-bottom: 40px;
+    }
+  }
   &__content-top {
     max-width: 615px;
     font-size: 16px;
@@ -98,6 +112,36 @@
         }
       }
     }
+  }
+  &__list-item {
+    position: relative;
+    padding-left: 20px;
+    text-align: start;
+    @include high-tablet {
+      padding-left: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: currentColor;
+      left: 2px;
+      border-radius: 50%;
+      top: 13px;
+      @include high-tablet {
+        width: 4px;
+        height: 4px;
+        top: 10px;
+        left: 2px;
+      }
+    }
+  }
+  &__list-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
   }
   &__gallery {
     flex: 0 1 785px;

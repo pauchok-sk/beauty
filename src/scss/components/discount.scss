@@ -49,6 +49,37 @@
       }
     }
   }
+  &._winback {
+    padding: 90px 0px;
+    @include high-tablet {
+      padding: 40px 0px 370px 0px;
+      background: #4f4d4e;
+    }
+    .discount__bg {
+      object-position: top right;
+      @include big-desktop {
+        object-position: top 0 right -200px;
+      }
+      @include high-desktop {
+        object-position: top 0 right -350px;
+      }
+      @include high-tablet {
+        object-position: top right;
+        height: 320px;
+      }
+    }
+    .discount__info {
+      max-width: 570px;
+    }
+    .discount__content {
+      max-width: none;
+      @include small-tablet {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+    }
+  }
   @include high-tablet {
     padding: 40px 0px 400px 0px;
     background: linear-gradient(
@@ -207,6 +238,38 @@
       font-size: 12px;
       line-height: 24px;
       letter-spacing: 0.24px;
+    }
+  }
+  &__content-min {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.28px;
+    }
+
+    p,
+    ul {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: currentColor;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+      }
     }
   }
 }

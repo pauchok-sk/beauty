@@ -1089,6 +1089,7 @@ if (applySlider) {
     spaceBetween: 20,
     speed: 800,
     grabCursor: true,
+    autoHeight: true,
     autoplay: {
       delay: 5000,
     },
