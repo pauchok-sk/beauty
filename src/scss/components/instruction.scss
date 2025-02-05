@@ -28,6 +28,10 @@
     padding: 39px;
     color: white;
 
+    @media (max-width: 420px) {
+      padding: 25px;
+    }
+
     .h2 {
       @include small-tablet {
         text-align: center;

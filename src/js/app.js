@@ -6,11 +6,13 @@ import "./modules/bootstrap.bundle.min.js";
 import "./modules/select2.min.js";
 import "./components.js";
 import beforeAfter from "./modules/beforeAfter.js";
+import showItems from "./modules/showItems.js";
 
 flsFunctions.mediaAdaptive();
 flsFunctions.isWebp();
 beforeAfter();
 more();
+showItems();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
@@ -695,7 +697,6 @@ if (historySlider) {
     autoplay: {
       delay: 5000,
     },
-    autoHeight: true,
     pagination: {
       el: document.querySelector(".history .swiper-pagination"),
       clickable: true,

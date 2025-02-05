@@ -81,7 +81,7 @@
             <ul class="intro-lend__adv">
               <li class="intro-lend__adv-item">
                 <img
-                  src="@img/like.svg"
+                  src="@img/settings.svg"
                   alt="icon"
                   class="intro-lend__adv-icon mb-4"
                 />
@@ -95,7 +95,7 @@
               </li>
               <li class="intro-lend__adv-item">
                 <img
-                  src="@img/like.svg"
+                  src="@img/gradation.svg"
                   alt="icon"
                   class="intro-lend__adv-icon mb-4"
                 />
@@ -112,7 +112,7 @@
               </li>
               <li class="intro-lend__adv-item">
                 <img
-                  src="@img/like.svg"
+                  src="@img/star.svg"
                   alt="icon"
                   class="intro-lend__adv-icon mb-4"
                 />
@@ -154,7 +154,7 @@
                 <div
                   class="consultW consultW--p-sm-0 consultW--border-white-02 h-100 _border"
                 >
-                  <h2 class="h3 fw-medium mb-2 text-center text-sm-start">
+                  <h2 class="h3 fw-medium mb-2 text-center text-sm-start text-uppercase">
                     Один фракционный со2 лазер Dermaxel включает в себя
                     функционал оборудования стоимостью более 15 000 000*
                   </h2>
@@ -171,7 +171,7 @@
                       placeholder="Имя"
                     />
                   </div>
-                  <div class="inputW mb-2 mb-sm-3">
+                  <div class="inputW mb-4 mb-sm-3">
                     <input
                       type="tel"
                       class="formInput formInput--bg-white-005"
@@ -643,45 +643,68 @@
             </div>
           </div>
         </section>
-        <section class="discount _training">
-          <img src="@img/discount-2.jpg" alt="" class="discount__bg _cover" />
+
+
+        <section class="discount _dermaxel">
           <div class="container">
-            <div class="discount__info _big">
-              <h2 class="h2 discount__title mb-4">
-                Получите уникальную возможность <span>пройти обучение</span>
-                в Центре В.И. Кулакова.
-              </h2>
-              <div class="discount__content mb-5">
-                <p>
-                  При покупке гинекологической комплектации фракционного CO2
-                  лазера Dermaxel мы дарим обучение в «Национальном медицинском
-                  исследовательском центре акушерства и гинекологии им.
-                  академика В.И. Кулакова». Обучение включает теоретическую и
-                  практическую часть с отработкой на аппарате Dermaxel и дает
-                  возможность овладеть новой методикой в эстетической
-                  гинекологии.
-                </p>
-              </div>
-              <button
-                data-fancybox
-                data-src="#modalDiscount"
-                class="discount__btn"
-              >
-                <span>подробные условия акции</span>
-                <svg class="discount__btn-arrow">
-                  <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-                </svg>
-              </button>
+            <div class="discount__body _dermaxel">
+              <img src="@img/discount-2.jpg" alt="" class="discount__bg _dermaxel" />
+                <div class="discount__info _dermaxel">
+                  <h2 class="h4 text-uppercase discount__title mb-4">
+                    Получите уникальную <br />
+                    возможность <span>пройти обучение</span> <br />
+                    в Центре В.И. Кулакова.
+                  </h2>
+                  <div class="discount__content mb-5">
+                    <p>
+                      При покупке гинекологической комплектации фракционного CO2
+                      лазера Dermaxel мы дарим обучение в «Национальном медицинском
+                      исследовательском центре акушерства и гинекологии им.
+                      академика В.И. Кулакова». Обучение включает теоретическую и
+                      практическую часть с отработкой на аппарате Dermaxel и дает
+                      возможность овладеть новой методикой в эстетической
+                      гинекологии.
+                    </p>
+                  </div>
+                  <button
+                    data-fancybox
+                    data-src="#modalDiscount"
+                    class="discount__btn d-flex d-lg-none"
+                  >
+                    <span>подробные условия акции</span>
+                    <svg class="discount__btn-arrow">
+                      <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                  </button>
+                </div>
             </div>
           </div>
         </section>
+
+
         @@include('html/specifications.html',{})
         <section class="parameters _border">
-          <div class="container">
+          <div class="container parent-show">
             <h2 class="h3 text-uppercase parameters__title">
               технические характеристики
             </h2>
-            <ul class="parameters__list">
+            <ul data-show="8" data-show-step="100" class="parameters__list">
+              <li>
+                <span>Вид излучения:</span>
+                <span>лазерное инфракрасное, неионизирующее</span>
+              </li>
+              <li>
+                <span>Источник излучения:</span>
+                <span>полупроводниковый лазер</span>
+              </li>
+              <li>
+                <span>Вид излучения:</span>
+                <span>лазерное инфракрасное, неионизирующее</span>
+              </li>
+              <li>
+                <span>Источник излучения:</span>
+                <span>полупроводниковый лазер</span>
+              </li>
               <li>
                 <span>Вид излучения:</span>
                 <span>лазерное инфракрасное, неионизирующее</span>
@@ -747,7 +770,7 @@
                 <span>полупроводниковый лазер</span>
               </li>
             </ul>
-            <button class="button button--blue parameters__btn mx-auto">
+            <button data-show-btn class="button button--blue parameters__btn mx-auto">
               <span>Смотреть все параметры</span>
               <svg>
                 <use xlink:href="img/icons/icons.svg#arrow-down"></use>

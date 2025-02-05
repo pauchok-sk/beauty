@@ -1,6 +1,6 @@
 .guards {
   padding: 80px 0px;
-  background-color: var(--gray-bckg);
+  background-color: var(--gray-bckg2);
   @include small-tablet {
     padding: 60px 0px;
   }
@@ -101,7 +101,7 @@
     width: 165px;
     height: 165px;
     background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid var(--white-06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: transform 0.2s ease;
     z-index: 1;
@@ -111,7 +111,7 @@
     }
   }
   &__video-icon {
-    width: 60px;
+    width: 48px;
     transform: translateX(5px); 
     @include high-tablet {
       width: 20px;

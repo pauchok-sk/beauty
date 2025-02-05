@@ -387,21 +387,21 @@
         </p>
       </li>
       <li class="intro-lend__adv-item">
-        <img src="img/like.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
+        <img src="img/medal.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
         <h5 class="intro-lend__adv-title mb-3 md:mb-2">Качество</h5>
         <p class="intro-lend__adv-content">
           Производится в России. <br> Гарантия 2 года
         </p>
       </li>
       <li class="intro-lend__adv-item">
-        <img src="img/like.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
+        <img src="img/documents.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
         <h5 class="intro-lend__adv-title mb-3 md:mb-2">Полная документация</h5>
         <p class="intro-lend__adv-content">
           Регистрационное удостоверение <br> РЗН 2019/9376
         </p>
       </li>
       <li class="intro-lend__adv-item">
-        <img src="img/like.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
+        <img src="img/star.svg" alt="icon" class="intro-lend__adv-icon mb-4" />
         <h5 class="intro-lend__adv-title mb-3 md:mb-2">Выбор экспертов</h5>
         <p class="intro-lend__adv-content">
           Лидер продаж 2020-2023 г. <br> Продано более 1800 аппаратов
@@ -807,9 +807,57 @@
 </section>
 
         <section class="parameters">
-  <div class="container">
+  <div class="container parent-show">
     <h2 class="h3 text-uppercase parameters__title">технические параметры</h2>
-    <ul class="parameters__list">
+    <ul data-show="8" data-show-step="100" class="parameters__list">
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
+      <li>
+        <span>Вид излучения:</span>
+        <span>лазерное инфракрасное, неионизирующее</span>
+      </li>
+      <li>
+        <span>Источник излучения:</span>
+        <span>полупроводниковый лазер</span>
+      </li>
       <li>
         <span>Вид излучения:</span>
         <span>лазерное инфракрасное, неионизирующее</span>
@@ -843,7 +891,7 @@
         <span>полупроводниковый лазер</span>
       </li>
     </ul>
-    <button class="button button--blue parameters__btn mx-auto">
+    <button data-show-btn class="button button--blue parameters__btn mx-auto">
       <span>Смотреть все параметры</span>
       <svg>
         <use xlink:href="img/icons/icons.svg#arrow-down"></use>
@@ -1477,30 +1525,33 @@
           </div>
         </section>
         <section class="discount">
-  <img src="img/discount.jpg" alt="" class="discount__bg" />
   <div class="container">
-    <div class="discount__info">
-      <h2 class="h2 discount__title mb-4">
-        Специальная акция: <span>лицензия в подарок!</span>
-      </h2>
-      <div class="discount__content mb-5">
-        <p>
-          При покупке аппарата In Motion D1, мы рады предложить вам уникальную
-          возможность! Если вам требуется лицензия для работы с аппаратом, наши
-          партнеры помогут ее оформить абсолютно <strong>бесплатно</strong>
-        </p>
+    <div class="discount__body">
+      <img src="img/discount.jpg" alt="" class="discount__bg" />
+      <div class="discount__info">
+        <h2 class="h4 discount__title text-uppercase fw-bold mb-4">
+          Специальная акция: <br> <span>лицензия в подарок!</span>
+        </h2>
+        <div class="discount__content mb-5">
+          <p>
+            При покупке аппарата In Motion D1, мы рады предложить вам уникальную
+            возможность! Если вам требуется лицензия для работы с аппаратом,
+            наши партнеры помогут ее оформить абсолютно
+            <strong>бесплатно</strong>
+          </p>
+        </div>
+        <button data-fancybox data-src="#modalDiscount" class="discount__btn">
+          <span>подробные условия акции</span>
+          <svg class="discount__btn-arrow">
+            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+          </svg>
+        </button>
       </div>
-      <button data-fancybox data-src="#modalDiscount" class="discount__btn">
-        <span>подробные условия акции</span>
-        <svg class="discount__btn-arrow">
-          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
 
-        <section class="sect">
+        <section class="sect _p-min">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 pt-3 pt-sm-0">
@@ -1546,12 +1597,12 @@
                       <input
                         type="checkbox"
                         class="checkboxInput"
-                        id="order-22"
+                        id="order-d1"
                         checked
                       />
                       <label
                         class="checkboxLabel align-items-center"
-                        for="order-22"
+                        for="order-d1"
                       >
                         <span class="rect rect--gray2 position-static"></span>
                         <div class="agreementText text--sm text--white">
@@ -2099,7 +2150,7 @@
     <h2 class="h3 text-uppercase get__title">приобретайте как вам удобно</h2>
     <div class="get__wrapper">
       <div class="get__info">
-        <ul class="get__list d-flex flex-column mb-5 gap-4">
+        <ul class="get__list d-flex flex-column mb-5 gap-5">
           <li>
             <h4 text-uppercase class="h4 text-uppercase mb-2 mb-lg-4 ">Аренда</h4 text-uppercase>
             <p class="get__list-content">
@@ -2693,7 +2744,7 @@
       </div>
 
       <button
-        class="button button--white formBtn width-sm-100 text-nowrap mt-4"
+        class="button button--blue formBtn width-sm-100 text-nowrap mt-4"
       >
         Отправить
       </button>

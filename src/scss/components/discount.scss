@@ -1,83 +1,24 @@
 .discount {
   position: relative;
-  padding: 160px 0px 130px 0px;
-  background-color: var(--gray-3);
   z-index: 1;
-  &._training {
-    padding: 120px 0px;
-  }
-  &._offer {
-    padding: 160px 0px 120px 0px;
-    background: var(--gray-bckg2) !important;
-
-    .discount__bg {
-      @include high-desktop {
-        object-position: top 0 right -250px;
-      }
-      @include high-tablet {
-        object-position: right;
-        height: 340px;
-      }
+  &._bg-white {
+    @include high-tablet {
+      background: #e7e7e7;
     }
   }
-  &._g2 {
-    padding: 135px 0px 200px 0px;
-
+  &._bg-white-light {
     @include high-tablet {
       background: #e7e5e5;
-      padding: 40px 0px 360px 0px;
     }
-
-    .discount__info {
-      max-width: 555px;
-    }
-    .discount__content {
-      max-width: none;
-      @include small-tablet {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.32px;
-      }
-    }
-    .discount__bg {
-      @include big-desktop {
-        object-position: bottom 0 right -320px;
-      }
-      @include high-tablet {
-        object-position: top 0 right 0;
-        height: 320px;
-      }
+  }
+  &._einxel {
+    @include high-tablet {
+      padding-bottom: 370px;
     }
   }
   &._winback {
-    padding: 90px 0px;
     @include high-tablet {
-      padding: 40px 0px 370px 0px;
       background: #4f4d4e;
-    }
-    .discount__bg {
-      object-position: top right;
-      @include big-desktop {
-        object-position: top 0 right -200px;
-      }
-      @include high-desktop {
-        object-position: top 0 right -350px;
-      }
-      @include high-tablet {
-        object-position: top right;
-        height: 320px;
-      }
-    }
-    .discount__info {
-      max-width: 570px;
-    }
-    .discount__content {
-      max-width: none;
-      @include small-tablet {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.32px;
-      }
     }
   }
   @include high-tablet {
@@ -92,36 +33,91 @@
       #b3b3b3 100%
     );
 
-    &._training {
+    &._dermaxel {
       padding: 40px 0px 470px 0px;
     }
     &._offer {
       padding: 40px 0px 380px 0px;
     }
   }
+  &__body {
+    position: relative;
+    overflow: hidden;
+    padding: 135px 0px 45px 115px;
+    min-height: 630px;
+    background-color: var(--gray-3);
+    z-index: 1;
+    @include big-desktop {
+      padding-left: 50px;
+    }
+    @include high-desktop {
+      padding: 100px 0px 30px 40px;
+      min-height: 505px;
+    }
+    @include high-tablet {
+      background-color: transparent;
+      padding: 0 !important;
+      position: static;
+      min-height: auto;
+      overflow: visible;
+    }
+
+    &._center {
+      display: flex;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &._dermaxel {
+      background-color: #a5a5a5;
+      @include high-tablet {
+        background-color: transparent;
+      }
+    }
+    &._antige {
+      background-color: #949494;
+      @include high-tablet {
+        background-color: transparent;
+      }
+    }
+  }
   &__bg {
     position: absolute;
-    width: 1280px;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
     max-width: none;
     bottom: 0;
     right: 0;
     z-index: -1;
-    &._cover {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: right;
-    }
     @include high-desktop {
       width: 1000px;
     }
     @include high-tablet {
       height: 360px;
-      width: auto;
+      width: 100%;
+    }
 
-      &._cover {
-        width: 100%;
+    &._dermaxel {
+      @include high-tablet {
         height: 410px;
+      }
+    }
+    &._antige {
+      @media (max-width: 1400px) {
+        right: -200px;
+      }
+      @include high-tablet {
+        right: 0;
+      }
+    }
+    &._g2 {
+      @media (max-width: 1400px) {
+        right: -200px;
+      }
+      @include high-tablet {
+        right: 0;
       }
     }
   }
@@ -134,18 +130,52 @@
       padding: 0 20px;
     }
 
-    &._big {
-      max-width: 695px;
+    &._dermaxel {
+      max-width: 670px;
+      @include big-desktop {
+        max-width: 470px;
+      }
+      @include high-tablet {
+        max-width: none;
+      }
 
       .discount__content {
         max-width: none;
       }
     }
-    &._middle {
-      max-width: 695px;
+    &._antige {
+      max-width: 555px;
+      @include mobile {
+        padding: 0;
+      }
 
-      @include big-desktop {
-        max-width: 520px;
+      .discount__content {
+        max-width: none;
+      }
+    }
+    &._einxel {
+      max-width: 520px;
+    }
+    &._g2 {
+      max-width: 555px;
+      @include high-desktop {
+        max-width: 500px;
+      }
+      @include mobile {
+        padding: 0;
+      }
+
+      .discount__content {
+        max-width: none;
+      }
+    }
+    &._winback {
+      max-width: 570px;
+      @include high-desktop {
+        max-width: 500px;
+      }
+      @media (max-width: 420px) {
+        padding: 0;
       }
 
       .discount__content {
@@ -158,18 +188,52 @@
   }
   &__title {
     color: black;
-    font-weight: 500;
     span {
       color: var(--blue);
     }
     @include high-tablet {
       text-align: center;
     }
+    @include small-tablet {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  &__title-descr {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+    max-width: 555px;
+    @include high-tablet {
+      text-align: center;
+    }
+    @include small-tablet {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.48px;
+    }
   }
   &__content {
     max-width: 485px;
     font-size: 20px;
     line-height: 30px;
+
+    &._antige {
+      font-size: 24px;
+      line-height: 36px;
+      @include small-tablet {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    &._winback {
+      @include small-tablet {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+    }
 
     p {
       margin: 0;

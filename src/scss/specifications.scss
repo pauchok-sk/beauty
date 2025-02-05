@@ -79,6 +79,17 @@ table {
       }
     }
   }
+  &._p-min {
+    @include small-tablet {
+      padding: 20px 0px !important;
+    }
+    @include mobile {
+      .consultW {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+      }
+    }
+  }
 
   &.pt-0 {
     padding-top: 0;
