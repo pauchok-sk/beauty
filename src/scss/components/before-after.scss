@@ -1,5 +1,6 @@
 .before-after {
   overflow: hidden;
+  // clip-path: inset(0 0 0 0);
   padding: 80px 0px;
   background-color: #d6d6d6;
   @include high-tablet {
