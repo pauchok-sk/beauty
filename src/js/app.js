@@ -1369,3 +1369,6 @@ widgetVideo.addEventListener("click", () => {
   playerCaptions.play();
 });
 
+document.querySelector('input[type="range"]').addEventListener('touchstart', function(event) {
+  event.stopPropagation();
+});

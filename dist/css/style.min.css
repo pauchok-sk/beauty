@@ -22693,6 +22693,13 @@ h6--sm-h4,
     margin-right: auto;
   }
 }
+@media (max-width: 575px) {
+  .before-after__gallery {
+    overflow: visible;
+    flex: none;
+    width: 100%;
+  }
+}
 .before-after__slider {
   width: 100%;
 }
