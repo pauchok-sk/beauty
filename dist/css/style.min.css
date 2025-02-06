@@ -22722,7 +22722,9 @@ h6--sm-h4,
   -webkit-appearance: auto !important;
   opacity: 0;
   z-index: 100;
+  -webkit-transform: translate3d(0, 0, 0);
   display: none;
+  pointer-events: auto;
 }
 @media (max-width: 575px) {
   .before-after__range {
