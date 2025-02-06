@@ -22767,9 +22767,9 @@ h6--sm-h4,
     display: flex;
     overflow: hidden;
     width: 100%;
+    z-index: -1;
   }
   .before-after__slide-item:first-child {
-    z-index: 1;
     left: 0;
   }
   .before-after__slide-item:first-child img {
@@ -22780,7 +22780,6 @@ h6--sm-h4,
     width: 50%;
   }
   .before-after__slide-item:nth-child(2) {
-    z-index: 2;
     right: 0;
     width: 50%;
   }
