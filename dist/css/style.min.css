@@ -22703,6 +22703,11 @@ h6--sm-h4,
 .before-after__slider {
   width: 100%;
 }
+@media (max-width: 575px) {
+  .before-after__slider {
+    overflow: visible !important;
+  }
+}
 .before-after__slider .swiper-slide {
   display: flex !important;
   gap: 20px;
@@ -22721,6 +22726,8 @@ h6--sm-h4,
   }
 }
 .before-after__range {
+  position: relative;
+  touch-action: manipulation;
   width: 100%;
   height: 100%;
   top: 0;

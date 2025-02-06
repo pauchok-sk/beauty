@@ -163,6 +163,9 @@
   }
   &__slider {
     width: 100%;
+    @include mobile {
+      overflow: visible !important;
+    }
     .swiper-slide {
       display: flex !important;
       gap: 20px;
