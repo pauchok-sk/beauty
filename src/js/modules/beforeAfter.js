@@ -9,6 +9,16 @@ export default function beforeAfter() {
       const beforeTitle = beforeItem.querySelector(
         ".before-after__slide-item-title"
       );
+      const afterTitle = afterItem.querySelector(
+        ".before-after__slide-item-title"
+      );
+      const imgBefore = beforeItem.querySelector("img");
+      const imgAfter = afterItem.querySelector("img");
+
+      imgAfter.style.width = `${beforeItem.clientWidth}px`
+
+      window.addEventListener("resize", () => imgAfter.style.width = `${beforeItem.clientWidth}px`);
+
       const view = range.closest(".swiper-slide").querySelector(".before-after__range-view");
 
       range.addEventListener("input", (e) => {

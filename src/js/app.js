@@ -583,9 +583,9 @@ if (beforeAfterSlider) {
     slidesPerView: 1,
     speed: 800,
     spaceBetween: 20,
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     allowTouchMove: false,
     pagination: {
       el: document.querySelector(".before-after .swiper-pagination"),

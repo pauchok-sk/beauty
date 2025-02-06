@@ -180,7 +180,7 @@
     left: 0;
     -webkit-appearance: auto !important;
     opacity: 0;
-    z-index: 10;
+    z-index: 100;
     display: none;
     @include mobile {
       display: block;
@@ -219,10 +219,10 @@
       top: 0;
       display: flex;
       overflow: hidden;
+      width: 100%;
       &:first-child {
         z-index: 1;
         left: 0;
-        width: 100%;
         img {
           object-position: left;
         }
@@ -235,8 +235,12 @@
         z-index: 2;
         right: 0;
         width: 50%;
-
+        
         img {
+          max-width: none;
+          position: absolute;
+          top: 0;
+          right: 0;
           object-position: right;
         }
       }
