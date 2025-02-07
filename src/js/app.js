@@ -697,6 +697,7 @@ if (historySlider) {
     autoplay: {
       delay: 5000,
     },
+    autoHeight: true,
     pagination: {
       el: document.querySelector(".history .swiper-pagination"),
       clickable: true,
@@ -1348,13 +1349,31 @@ function toggleShowWidget(array) {
   array.forEach((el) => {
     let parent = el.closest(".widget-item");
     let action = parent.querySelector(".widget-action");
-    el.addEventListener("click", () => {
+    action.addEventListener("click", (e) => e.stopPropagation());
+
+    if (!action.classList.contains("active")) {
+      document.body.addEventListener("click", () => {
+        action.classList.remove("active");
+        parent.classList.remove("active");
+        el.classList.remove("active");
+      })
+    }
+
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+
       action.classList.toggle("active");
       parent.classList.toggle("active");
       el.classList.toggle("active");
     });
   });
 }
+
+function closeBasket(el) {
+  action.classList.remove("active");
+  parent.classList.remove("active");
+}
+
 let widgetBtnArray = document.querySelectorAll(".widget-btn");
 let widgetCartBtnArray = document.querySelectorAll(".widget-cart-btn");
 

@@ -19,6 +19,16 @@
     margin-bottom: 10px;
   }
 
+  &__close-button {
+    position: sticky !important;
+    margin-left: auto;
+    // padding-bottom: 35px;
+    transform: translate(45px, -50px);
+    @include mobile {
+      transform: translate(0px, 0px);
+      background: white !important;
+    }
+  }
   .f-button {
     right: 6px;
     top: 6px;

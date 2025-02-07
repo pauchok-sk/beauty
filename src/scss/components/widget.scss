@@ -178,13 +178,22 @@
 
 .widget-cart-btn {
   height: 56px;
-  background: var(--White, #FFF);
+  background-color: var(--White, #FFF);
   border-radius: 28px;
+  transition: background-color .2s ease, color .2s ease;
+  @include hover {
+    background-color: var(--blue);
+    color: white;
+    svg {
+      fill: white;
+    }
+  }
 
   svg {
     fill: var(--blue);
     width: 24px;
     height: 24px;
+    transition: fill .2s ease;
   }
 }
 

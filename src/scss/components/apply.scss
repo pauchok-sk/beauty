@@ -14,9 +14,9 @@
     letter-spacing: 0.32px;
   }
   &__slider {
+    margin-bottom: 60px;
     @include small-tablet {
       overflow: visible;
-      margin-bottom: 60px;
     }
     .swiper-slide {
       @include small-tablet {
