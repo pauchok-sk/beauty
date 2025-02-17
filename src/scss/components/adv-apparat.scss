@@ -1,0 +1,103 @@
+.adv-apparat {
+  padding: 80px 0px;
+  color: white;
+  @include small-tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__body {
+    display: flex;
+    gap: 40px;
+  }
+  &__gallery {
+    width: 50%;
+    flex-shrink: 0;
+    @include big-desktop {
+      width: 500px;
+    }
+    @include high-desktop {
+      width: 430px;
+    }
+    @include high-tablet {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 1 610px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @include high-tablet {
+      flex: none;
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 36px;
+    @include big-desktop {
+      font-size: 20px;
+      line-height: 26px;
+      padding-left: 26px;
+    }
+    @include small-tablet {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+
+    strong {
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      @include tablet {
+        letter-spacing: 1.6px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 14px;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background-color: currentColor;
+      border-radius: 50%;
+      @include big-desktop {
+        top: 9px;
+        left: 9px;
+      }
+      @include small-tablet {
+        width: 5px;
+        height: 5px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+}

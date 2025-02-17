@@ -44,7 +44,7 @@
               <button
                 class="button button--blue"
                 data-fancybox
-                data-src="#modalOrder"
+                data-src="#modalDefault-2"
               >
                 Связаться с менеджером
               </button>
@@ -443,11 +443,12 @@
                 <span class="income__gallery-first">Прибыль в месяц:</span>
                 <span class="h2 income__gallery-second">1 282 500 руб.</span>
                 <button
-                  class="button button--blue mt-3 md:mt-5"
+                  class="button button--blue mt-3 md:mt-5 income__btn-calc"
                   data-fancybox
                   data-src="#modalOrder"
                 >
-                  Посчитать окупаемость для меня
+                <span>Посчитать окупаемость для меня</span>
+                <span>Посчитать окупаемость</span>
                 </button>
               </div>
             </div>
@@ -735,7 +736,8 @@
             </div>
           </div>
         </section>
-        @@include('html/videos.html',{}) @@include('html/partners.html',{})
+        @@include('html/videos.html',{"title": "<strong>Лучшие специалисты</strong> отдают предпочтение аппарату микроигольчатого РФ-лифтинга Einxel PLUS:"})
+        @@include('html/partners.html',{})
         <section class="reviews sect overflow-hidden">
           <div class="container">
             <div class="sectHead mb-4 pb-3 mb-lg-5 pb-lg-0">
@@ -1067,7 +1069,8 @@
                   </div>
                 </a>
                 <span class="parameters__video-content"
-                  >Узнайте об аппарате за 2 минуты</span
+                  >смотреть включение 
+                  аппарата</span
                 >
               </div>
             </div>

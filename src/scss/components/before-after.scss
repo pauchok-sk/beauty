@@ -1,6 +1,5 @@
 .before-after {
   overflow: hidden;
-  // clip-path: inset(0 0 0 0);
   padding: 80px 0px;
   background-color: #d6d6d6;
   @include high-tablet {
@@ -78,6 +77,14 @@
     }
   }
   &__content {
+    &._same {
+      @include small-tablet {
+        p {
+          font-size: 16px !important;
+          line-height: 24px !important;
+        }
+      }
+    }
     p {
       font-size: 16px;
       line-height: 24px;

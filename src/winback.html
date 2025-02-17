@@ -49,7 +49,7 @@
               <button
                 class="button button--blue"
                 data-fancybox
-                data-src="#modalOrder"
+                data-src="#modalDefault-2"
               >
                 Связаться с менеджером
               </button>
@@ -730,11 +730,12 @@
                 <span class="income__gallery-first">Прибыль в месяц:</span>
                 <span class="h2 income__gallery-second">657 000 руб.</span>
                 <button
-                  class="button button--blue mt-3 md:mt-5"
+                  class="button button--blue mt-3 md:mt-5 income__btn-calc"
                   data-fancybox
                   data-src="#modalOrder"
                 >
-                  Посчитать окупаемость для меня
+                <span>Посчитать окупаемость для меня</span>
+                <span>Посчитать окупаемость</span>
                 </button>
               </div>
             </div>
@@ -902,12 +903,12 @@
                   </div>
 
                   <button class="button button--blue mt-4">
-                    Заказать обратный звонок
+                    Получить расчет окупаемости
                   </button>
                 </form>
               </div>
               <img
-                src="@img/instruction.jpg"
+                src="@img/instruction-g2.jpg"
                 alt="image"
                 class="instruction__img"
               />
@@ -1091,7 +1092,8 @@
             </div>
           </div>
         </section>
-        @@include('html/videos.html',{}) @@include('html/partners.html',{})
+        @@include('html/videos.html',{"title": "<strong>Более 7500 врачей</strong> в 55 странах мира  отдают свое предпочтение аппарату Winback "})
+        @@include('html/partners.html',{})
         <section class="reviews sect overflow-hidden">
           <div class="container">
             <div class="sectHead mb-4 pb-3 mb-lg-5 pb-lg-0">
@@ -1475,7 +1477,8 @@
                   </div>
                 </a>
                 <span class="parameters__video-content"
-                  >Узнайте об аппарате за 2 минуты</span
+                  >смотреть включение 
+                  аппарата</span
                 >
               </div>
             </div>
@@ -1534,14 +1537,9 @@
         <section class="apply">
           <div class="container">
             <h2
-              class="h3 text-center text-uppercase mb-5 mb-md-6 d-none d-md-block fw-normal"
+              class="h3 text-center text-uppercase mb-2 mb-md-6 fw-normal"
             >
               Режимы работы Winback 3SE
-            </h2>
-            <h2
-            class="h3 text-center text-uppercase mb-2 d-block d-md-none fw-normal"
-          >
-            технические параметры
             </h2>
             <p class="apply__head-content opacity-75 d-block d-md-none mb-5">Dermaxel предлагает большой выбор насадок для решения различных задач</p>
             <div class="swiper apply__slider" data-slides="4">

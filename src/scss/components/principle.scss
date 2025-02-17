@@ -46,6 +46,12 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.32px;
+      &:first-child {
+        margin-bottom: 0;
+      }
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     p {
@@ -64,6 +70,85 @@
         @include small-tablet {
           font-size: 20px;
           line-height: 30px;
+        }
+      }
+    }
+  }
+  &__same-content {
+    font-size: 24px;
+    line-height: 36px;
+    @include big-desktop {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @include high-desktop {
+      font-size: 18px;
+    }
+    @include small-tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    ul {
+      li {
+        position: relative;
+        padding-left: 36px;
+        @include big-desktop {
+          padding-left: 24px;
+        }
+        @include small-tablet {
+          padding-left: 30px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: currentColor;
+          left: 14px;
+          top: 14px;
+
+          @include big-desktop {
+            width: 6px;
+            height: 6px;
+            top: 10px;
+            left: 10px;
+          }
+          @include small-tablet {
+            top: 12px;
+            left: 12px;
+          }
+        }
+      }
+    }
+  }
+  &__gallery {
+    width: 50%;
+    @include high-tablet {
+      width: 100%;
+    }
+
+    .principle__same-content {
+      @include high-tablet {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    .principle__img {
+      width: 100%;
+      @include high-tablet {
+        &:not(:last-child) {
+          margin-bottom: 40px;
         }
       }
     }

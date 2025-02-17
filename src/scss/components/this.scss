@@ -25,13 +25,15 @@
     align-items: start;
     gap: 24px;
     @include big-desktop {
-      grid-column: 4 span;
+      // grid-column: 4 span;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
     }
     @include high-desktop {
       grid-column: 6 span;
     }
     @include small-tablet {
-      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 24px;

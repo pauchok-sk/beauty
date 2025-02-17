@@ -52,6 +52,20 @@
       max-width: none;
       text-align: center;
     }
+
+    span {
+      &:last-child {
+        display: none;
+      }
+      @include mobile {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          display: block;
+        }
+      }
+    }
   }
   &__img {
     width: calc(50% - 18px);

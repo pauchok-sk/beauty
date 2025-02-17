@@ -15,11 +15,15 @@ export default function beforeAfter() {
       const imgBefore = beforeItem.querySelector("img");
       const imgAfter = afterItem.querySelector("img");
 
-      imgAfter.style.width = `${beforeItem.clientWidth}px`
+      imgAfter.style.width = `${beforeItem.clientWidth}px`;
 
-      window.addEventListener("resize", () => imgAfter.style.width = `${beforeItem.clientWidth}px`);
+      window.addEventListener("resize", () => {
+        imgAfter.style.width = `${beforeItem.clientWidth}px`;
+      });
 
-      const view = range.closest(".swiper-slide").querySelector(".before-after__range-view");
+      const view = range
+        .closest(".swiper-slide")
+        .querySelector(".before-after__range-view");
 
       range.addEventListener("input", (e) => {
         afterItem.style.width = `${100 - e.target.value}%`;

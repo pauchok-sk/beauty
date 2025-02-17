@@ -35,7 +35,25 @@
     line-height: 24px;
     letter-spacing: 0.32px;
 
-    p {
+    &._first-title {
+      p {
+        &:first-child {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      color: var(--blue);
+      text-decoration: underline;
+      @include hover {
+        text-decoration: none;
+      }
+    }
+
+    p, a {
       margin: 0;
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -80,6 +98,16 @@
           padding-left: 15px;
         }
       }
+    }
+  }
+  &__img {
+    width: 100%;
+    grid-column: 12 span;
+    min-height: 310px;
+    object-fit: cover;
+    object-position: right;
+    @include high-desktop {
+      grid-column: 6 span;
     }
   }
 }

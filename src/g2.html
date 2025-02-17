@@ -44,7 +44,7 @@
               <button
                 class="button button--blue"
                 data-fancybox
-                data-src="#modalOrder"
+                data-src="#modalDefault-2"
               >
                 Связаться с менеджером
               </button>
@@ -443,11 +443,12 @@
                 <span class="income__gallery-first">Прибыль в месяц:</span>
                 <span class="h2 income__gallery-second">1 282 500 руб.</span>
                 <button
-                  class="button button--blue mt-3 md:mt-5"
+                  class="button button--blue mt-3 md:mt-5 income__btn-calc"
                   data-fancybox
                   data-src="#modalOrder"
                 >
-                  Посчитать окупаемость для меня
+                <span>Посчитать окупаемость для меня</span>
+                <span>Посчитать окупаемость</span>
                 </button>
               </div>
             </div>
@@ -549,8 +550,7 @@
             <div class="d-flex align-items-stretch gap-4 instruction__wrapper">
               <div class="flex-fill instruction__main instruction__info">
                 <h2 class="h2 fw-medium mb-4">
-                  Получите коммерческое предложение с подробной презентацией
-                  аппарата
+                  Получите консультацию нашего специалиста
                 </h2>
                 <form class="instruction__form" action="#">
                   <div class="inputW mb-2 mb-sm-3">
@@ -602,7 +602,7 @@
                 </form>
               </div>
               <img
-                src="@img/instruction.jpg"
+                src="@img/instruction-g2.jpg"
                 alt="image"
                 class="instruction__img"
               />
@@ -660,82 +660,6 @@
             </p>
             <div class="swiper apply__slider" data-slides="4">
               <div class="swiper-wrapper">
-                <article class="swiper-slide">
-                  <img
-                    src="@img/apply-img.jpg"
-                    alt="image"
-                    class="apply__slide-img"
-                  />
-                  <div class="px-4">
-                    <h5 class="h5 fw-medium text-uppercase mb-2 mb-xd-1">
-                      Картридж 1.5 мм
-                    </h5>
-                    <div class="apply__content">
-                      <p>
-                        Воздействует на глубину 1,5 мм - поверхностная дерма,
-                        что подходит для работы с такими деликатными зонами, как
-                        кожа вокруг глаз.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article class="swiper-slide">
-                  <img
-                    src="@img/apply-img.jpg"
-                    alt="image"
-                    class="apply__slide-img"
-                  />
-                  <div class="px-4">
-                    <h5 class="h5 fw-medium text-uppercase mb-2 mb-xd-1">
-                      Картридж 1.5 мм
-                    </h5>
-                    <div class="apply__content">
-                      <p>
-                        Воздействует на глубину 1,5 мм - поверхностная дерма,
-                        что подходит для работы с такими деликатными зонами, как
-                        кожа вокруг глаз.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article class="swiper-slide">
-                  <img
-                    src="@img/apply-img.jpg"
-                    alt="image"
-                    class="apply__slide-img"
-                  />
-                  <div class="px-4">
-                    <h5 class="h5 fw-medium text-uppercase mb-2 mb-xd-1">
-                      Картридж 1.5 мм
-                    </h5>
-                    <div class="apply__content">
-                      <p>
-                        Воздействует на глубину 1,5 мм - поверхностная дерма,
-                        что подходит для работы с такими деликатными зонами, как
-                        кожа вокруг глаз.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article class="swiper-slide">
-                  <img
-                    src="@img/apply-img.jpg"
-                    alt="image"
-                    class="apply__slide-img"
-                  />
-                  <div class="px-4">
-                    <h5 class="h5 fw-medium text-uppercase mb-2 mb-xd-1">
-                      Картридж 1.5 мм
-                    </h5>
-                    <div class="apply__content">
-                      <p>
-                        Воздействует на глубину 1,5 мм - поверхностная дерма,
-                        что подходит для работы с такими деликатными зонами, как
-                        кожа вокруг глаз.
-                      </p>
-                    </div>
-                  </div>
-                </article>
                 <article class="swiper-slide">
                   <img
                     src="@img/apply-img.jpg"
@@ -968,7 +892,8 @@
             </div>
           </div>
         </section>
-        @@include('html/videos.html',{}) @@include('html/partners.html',{})
+        @@include('html/videos.html',{"title": "Вы можете довериться опыту <strong>лучших специалистов</strong>, выбравших для своей практики аппарат U-ONE G2:"})
+        @@include('html/partners.html',{})
         <section class="reviews sect overflow-hidden">
           <div class="container">
             <div class="sectHead mb-4 pb-3 mb-lg-5 pb-lg-0">
@@ -1305,7 +1230,8 @@
                   </div>
                 </a>
                 <span class="parameters__video-content"
-                  >Узнайте об аппарате за 2 минуты</span
+                  >смотреть включение 
+                  аппарата</span
                 >
               </div>
             </div>

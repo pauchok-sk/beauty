@@ -60,7 +60,7 @@
   }
   &__article {
     flex: 1;
-    @include high-tablet {
+    @include high-desktop {
       flex: none;
       width: 100%;
     }
@@ -83,6 +83,7 @@
     }
     @include high-desktop {
       height: 360px;
+      background-position: top 0 right 0 !important;
     }
     @include small-tablet {
       height: 290px;
@@ -125,6 +126,10 @@
     line-height: 24px;
     letter-spacing: 0.32px;
     padding-right: 40px;
+    @include mobile {
+      padding-right: 0;
+      text-align: center;
+    }
 
     p {
       margin: 0;
