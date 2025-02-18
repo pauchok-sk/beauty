@@ -21,6 +21,10 @@
     text-align: center;
     margin: 0px auto 60px auto;
 
+    &._full {
+      max-width: none;
+    }
+
     @include small-tablet {
       font-size: 14px;
       line-height: 20px;

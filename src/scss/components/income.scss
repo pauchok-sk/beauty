@@ -30,6 +30,9 @@
       max-width: 810px;
       margin: 0 auto;
     }
+    &._mystic {
+      max-width: 810px;
+    }
 
     p {
       margin: 0;
@@ -67,20 +70,15 @@
     }
     &._clear-light {
       .income__gallery-info {
-        background: linear-gradient(
-          180deg,
-          #881524 0%,
-          #931224 9.06%,
-          #af1227 28.79%,
-          #b9112a 34.47%,
-          #be102b 41.91%,
-          #d20d2b 64.73%,
-          #dd0b2e 75.8%,
-          #de0b2c 85.48%,
-          #e10b30 100%
-        );
         @include high-tablet {
-          background: #D70C2E;
+          background: #d70c2e;
+        }
+      }
+    }
+    &._mystic {
+      .income__gallery-info {
+        @include high-tablet {
+          background: #03060e;
         }
       }
     }
@@ -363,6 +361,39 @@
         }
         &:last-child {
           display: block;
+        }
+      }
+    }
+  }
+  &__bottom-content {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 40px 0px;
+    margin: 40px auto 0px auto;
+    max-width: 810px;
+
+    @include small-tablet {
+      padding: 20px 0px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:first-child {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      @include small-tablet {
+        &:first-child {
+          font-size: 20px;
+          line-height: 30px;
         }
       }
     }

@@ -1045,7 +1045,9 @@ const introLendSlider = document.querySelector(".intro-lend__slider");
 if (introLendSlider) {
   const isFullMobile = introLendSlider.classList.contains("_auto-mobile");
 
-  const swiper = new Swiper(introLendSlider, {
+  const slidesPerView = +introLendSlider.dataset.slides || 4;
+
+  const swiper = new Swiper(introLendSlider, { 
     slidesPerView: isFullMobile ? "auto" : 2,
     speed: 800,
     autoplay: {
@@ -1061,7 +1063,7 @@ if (introLendSlider) {
     },
     breakpoints: {
       1200: {
-        slidesPerView: 4,
+        slidesPerView: slidesPerView,
       },
       992: {
         slidesPerView: 3,

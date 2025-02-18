@@ -246,11 +246,20 @@
     }
 
     .h5 {
-      max-width: 280px;
+      max-width: 290px;
     }
   }
   &__slide-icon {
     width: 80px;
+  }
+  &__slide-content {
+    max-width: 385px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    @include mobile {
+      max-width: 303px;
+    }
   }
   &__slide-list {
     font-size: 14px;

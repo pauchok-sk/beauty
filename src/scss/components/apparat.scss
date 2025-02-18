@@ -4,6 +4,10 @@
   @include small-tablet {
     padding-top: 60px;
   }
+  &._dark {
+    background-color: transparent;
+    color: white;
+  }
   &__title {
     margin-bottom: 60px;
   }

@@ -10,6 +10,19 @@
       margin-bottom: 40px;
     }
   }
+  &__head-content {
+    max-width: 750px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px auto 60px auto;
+    @include small-tablet {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+      margin-bottom: 40px;
+    }
+  }
   &__wrapper {
   }
   &__content {
@@ -19,8 +32,19 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    &._big {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0;
+    }
+
     @include small-tablet {
       padding-left: 0;
+      &._big {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
     }
     @include mobile {
       padding: 0;
@@ -55,7 +79,7 @@
     }
 
     .h5 {
-      max-width: 255px;;
+      max-width: 255px;
       &._big {
         max-width: 320px;
       }
