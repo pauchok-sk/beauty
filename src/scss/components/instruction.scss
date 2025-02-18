@@ -4,6 +4,13 @@
     padding-bottom: 60px;
   }
 
+  &._offset-top {
+    padding-top: 80px;
+    @include small-tablet {
+      padding-top: 60px;
+    }
+  }
+
   &._white {
     background-color: var(--gray-bckg2);
 

@@ -565,7 +565,522 @@
           </div>
         </section>
         @@include('html/adv-apparat.html',{})
-        
+        <section class="instruction _white _offset-top">
+          <div class="container">
+            <div class="d-flex align-items-stretch gap-4 instruction__wrapper">
+              <div class="flex-fill instruction__info _auto">
+                <h2 class="h2 fw-medium text-black mb-0">
+                  Получите коммерческое предложение
+                </h2>
+                <p class="instruction__content mb-4 _big">
+                  с подробной презентацией аппарата
+                </p>
+                <form class="instruction__form" action="#">
+                  <div class="inputW mb-2">
+                    <input
+                      type="text"
+                      class="formInput formInput--black"
+                      placeholder="Имя"
+                    />
+                  </div>
+                  <div class="inputW mb-2">
+                    <input
+                      type="tel"
+                      class="formInput formInput--black"
+                      placeholder="Контактный телефон"
+                    />
+                  </div>
+
+                  <div class="agreement mt-4">
+                    <input
+                      type="checkbox"
+                      class="checkboxInput"
+                      id="consultation"
+                      checked
+                    />
+                    <label
+                      class="checkboxLabel align-items-center"
+                      for="consultation"
+                    >
+                      <span class="rect rect--gray2 position-static"></span>
+                      <div class="agreementText text--sm text-black">
+                        Соглашаюсь на
+                        <a href="#" target="_blank"
+                          >обработку персональных данных</a
+                        >
+                      </div>
+                    </label>
+                  </div>
+
+                  <button class="button button--blue mt-4">
+                    Получить коммерческое предложение
+                  </button>
+                </form>
+              </div>
+              <img
+                src="@img/commercy-clear.jpg"
+                alt="image"
+                class="instruction__img _auto"
+              />
+            </div>
+          </div>
+        </section>
+        @@include('html/videos.html',{"title": "<strong>Лучшие специалисты выбирают</strong> для свой практики аппарат фототерапии ClearLight "})
+        @@include('html/partners.html',{})
+        <section class="reviews sect overflow-hidden">
+          <div class="container">
+            <div class="sectHead mb-4 pb-3 mb-lg-5 pb-lg-0">
+              <h2
+                class="h3 mx-auto text--white text-uppercase text-center mb-0"
+                style="max-width: 866px"
+              >
+                <span class="fw-normal">Мнения специалистов</span>
+              </h2>
+            </div>
+
+            <div class="swiper reviewsSlider reviewsSlider--sm-pr">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviewsSlide">
+                  <div class="reviewsCard">
+                    <div class="reviewsCardContent reviewsCardContent--black">
+                      <div class="reviewsCardText text--white">
+                        Инновационная платформа Дермаксель представляет широкие
+                        возможности для работы в гинекологии и, особенно, в
+                        эстетической гинекологии. Благодаря двум видам насадок
+                        для интравагинального воздействия мы можем проводить
+                        фракционной фототермолиз как при стрессовом недержании
+                        мочи, так и при генитоуринарном синдроме в менопаузе или
+                        при лактационной аменореи, а также при синдроме
+                        растянутого влагалища и опущении стенок влагалища 1 ст.
+                        Технология позволяет сочетать разные режимы и менять
+                        параметры индивидуально в зависимости от заболеваний.
+                        Благодаря персональным протоколам можно проводить
+                        минимально инвазивное лечение при сочетании
+                        функциональных и эстетических проблем. Большой выбор
+                        различных лазерных импульсов позволяет выполнять не
+                        только фракционный фототермолиз, но также выполнять
+                        хирургические манипуляции: разделение спаек вульвы,
+                        удаление новообразований и др. За счёт импульса,
+                        максимально щадяще воздействующего на ткани, заживление
+                        происходит в более короткие сроки, чем при других видах
+                        энергетического воздействия, в том числе и лазерами
+                        других производителей. Сама платформа очень компактная,
+                        легкая и мобильная. Могу сказать с полной уверенностью,
+                        что данная лазерная платформа является наиболее
+                        востребованной среди гинекологов и
+                        дерматологов-косметологов.
+                      </div>
+                      <button
+                        class="button button--text px-0 fw-normal text--xs ml-auto mt-3 text--white-06"
+                        data-fancybox
+                        data-src="#modalReviews"
+                      >
+                        читать полный текст отзыва
+                        <svg style="width: 12px; height: 12px">
+                          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="reviewsCardAuthor d-flex align-items-center">
+                      <img
+                        src="@img/admin/reviews/image-1.jpeg"
+                        alt="image"
+                        class="reviewsCardImg reviewsCardImg--round"
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-xl text-xl-sm-lg text--white">
+                          Пак Ольга Витальевна
+                        </div>
+                        <div class="text--white-06 text-sm-12">
+                          Должность и компания
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide reviewsSlide">
+                  <div class="reviewsCard">
+                    <div class="reviewsCardContent reviewsCardContent--black">
+                      <div class="reviewsCardText text--white">
+                        Инновационная платформа Дермаксель представляет широкие
+                        возможности для работы в гинекологии и, особенно, в
+                        эстетической гинекологии. Благодаря двум видам насадок
+                        для интравагинального воздействия мы можем проводить
+                        фракционной фототермолиз как при стрессовом недержании
+                        мочи, так и при генитоуринарном синдроме в менопаузе или
+                        при лактационной аменореи, а также при синдроме
+                        растянутого влагалища и опущении стенок влагалища 1 ст.
+                        Технология позволяет сочетать разные режимы и менять
+                        параметры индивидуально в зависимости от заболеваний.
+                        Благодаря персональным протоколам можно проводить
+                        минимально инвазивное лечение при сочетании
+                        функциональных и эстетических проблем. Большой выбор
+                        различных лазерных импульсов позволяет выполнять не
+                        только фракционный фототермолиз, но также выполнять
+                        хирургические манипуляции: разделение спаек вульвы,
+                        удаление новообразований и др. За счёт импульса,
+                        максимально щадяще воздействующего на ткани, заживление
+                        происходит в более короткие сроки, чем при других видах
+                        энергетического воздействия, в том числе и лазерами
+                        других производителей. Сама платформа очень компактная,
+                        легкая и мобильная. Могу сказать с полной уверенностью,
+                        что данная лазерная платформа является наиболее
+                        востребованной среди гинекологов и
+                        дерматологов-косметологов.
+                      </div>
+                      <button
+                        class="button button--text px-0 fw-normal text--xs ml-auto mt-3 text--white-06"
+                        data-fancybox
+                        data-src="#modalReviews"
+                      >
+                        читать полный текст отзыва
+                        <svg style="width: 12px; height: 12px">
+                          <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="reviewsCardAuthor d-flex align-items-center">
+                      <img
+                        src="@img/admin/reviews/image-1.jpeg"
+                        alt="image"
+                        class="reviewsCardImg reviewsCardImg--round"
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-xl text-xl-sm-lg text--white">
+                          Пак Ольга Витальевна Пак Ольга Витальевна
+                        </div>
+                        <div class="text--white-06 text-sm-12">
+                          Должность и компания
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide reviewsSlide">
+                  <div class="reviewsCard">
+                    <div class="reviewsCardContent reviewsCardContent--black">
+                      <div class="reviewsCardText text--white">
+                        Инновационная платформа Дермаксель представляет широкие
+                        возможности для работы в гинекологии и, особенно, в
+                        эстетической гинекологии.
+                      </div>
+                    </div>
+                    <div class="reviewsCardAuthor d-flex align-items-center">
+                      <img
+                        src="@img/admin/reviews/image-1.jpeg"
+                        alt="image"
+                        class="reviewsCardImg reviewsCardImg--round"
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-xl text-xl-sm-lg text--white">
+                          Пак Ольга Витальевна
+                        </div>
+                        <div class="text--white-06 text-sm-12">
+                          Должность и компания
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between mt-4 mt-lg-5 px-0 px-lg-5"
+              >
+                <button
+                  class="navArrow navArrow--white navArrowPrev d-none d-sm-flex"
+                >
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                  </svg>
+                </button>
+                <div class="swiper-pagination swiper-pagination--white"></div>
+                <button
+                  class="navArrow navArrow--white navArrowNext d-none d-sm-flex"
+                >
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video-about">
+          <div class="container">
+            <h2
+              class="h3 video-about__title text-uppercase text-black text-center fw-normal"
+            >
+              Производитель
+            </h2>
+            <div class="d-flex flex-column-reverse gap-5 flex-xl-row gap-xl-4">
+              <div class="video-about__content">
+                <p>
+                  <strong>EunSung Global</strong> — корейский бренд, признанный лидер в разработке и производстве косметологического оборудования с 1995 года. Основные принципы компании — безопасность, эффективность и доступность процедур. Все инновационные решения разрабатываются в собственных научных центрах и проходят строгие испытания в ведущих клиниках Южной Кореи перед выходом на рынок.
+                </p>
+                <p>
+                  Продукция EunSung соответствует международным стандартам качества и обладает необходимыми сертификациями. Благодаря высокой надежности и передовым технологиям оборудование компании успешно используется специалистами и клиниками в 70 странах мира.
+                </p>
+              </div>
+              <a
+                href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                data-fancybox
+                class="video-about__video"
+              >
+                <img
+                  src="@img/video-about-clear.jpg"
+                  alt="image"
+                  class="video-about__preview"
+                />
+                <div class="video-about__video-btn mb-2">
+                  <img
+                    src="@img/icons/play-white.svg"
+                    alt="icon"
+                    class="video-about__video-icon"
+                  />
+                </div>
+                <h5 class="h5 fw-medium text-uppercase text-center _big">
+                  смотреть видеоролик о компании EunSung Global
+                </h5>
+              </a>
+            </div>
+            <ul class="list video-about__list">
+              <li>
+                <img src="@img/shield.svg" alt="icon" class="video-about__list-icon mb-4">
+                <h5 class="h5 text-uppercase text-black text-center">Гарантия 2 года и собственный сервисный центр</h5>
+              </li>
+              <li>
+                <img src="@img/shield.svg" alt="icon" class="video-about__list-icon mb-4">
+                <h5 class="h5 text-uppercase text-black text-center">Бренд AMI Inc. на рынке <br> с 1998 года</h5>
+              </li>
+              <li>
+                <img src="@img/medal.svg" alt="icon" class="video-about__list-icon mb-4">
+                <h5 class="h5 text-uppercase text-black text-center">регистрационный номер <br> - РЗН 2022/18431 от 04.10.2022</h5>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="parameters">
+          <div class="container">
+            <h2 class="h3 text-uppercase parameters__title">
+              Технические Характеристики
+            </h2>
+            <ul class="parameters__list">
+              <li>
+                <span>Источник излучения:</span>
+                <span>Высокоинтенсивный импульсный широкополосный свет <br> (ксеноновая лампа)</span>
+              </li>
+              <li>
+                <span>Типы импульсов</span>
+                <span> одинарный, двойной, тройной и многократный</span>
+              </li>
+              <li>
+                <span>Длительность импульса:</span>
+                <span>3 – 35 мс</span>
+              </li>
+              <li>
+                <span>Спектр (длина волны):</span>
+                <span>430 нм — 980 нм</span>
+              </li>
+              <li>
+                <span>Электрические требования:</span>
+                <span>AC 100~250В (однофазный 50/60 Гц)</span>
+              </li>
+              <li>
+                <span>Размер пятна:</span>
+                <span>15 x 40 мм / 5 х 5 мм</span>
+              </li>
+              <li>
+                <span>Охлаждение:</span>
+                <span>максимум -20°С</span>
+              </li>
+              <li>
+                <span>Экран:</span>
+                <span>8 дюймов, LCD Touch Screen</span>
+              </li>
+              <li>
+                <span>Вес:</span>
+                <span>75 кг</span>
+              </li>
+              <li>
+                <span>Габариты (Ш x Д x В):</span>
+                <span> 310 × 950 × 589 мм</span>
+              </li>
+            </ul>
+            <div class="parameters__gallery">
+              <div class="swiper parameters__slider">
+                <div class="swiper-wrapper">
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                  <a
+                    href="@img/parameters.jpg"
+                    data-fancybox="parameters"
+                    class="swiper-slide"
+                  >
+                    <img
+                      src="@img/parameters.jpg"
+                      alt="image"
+                      class="parameters__slide-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-4 mt-lg-5">
+                <button
+                  class="navArrow navArrow--white navArrowPrev d-none d-sm-flex"
+                >
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                  </svg>
+                </button>
+                <div class="swiper-pagination swiper-pagination--white"></div>
+                <button
+                  class="navArrow navArrow--white navArrowNext d-none d-sm-flex"
+                >
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="parameters__video gap-3">
+                <a
+                  href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                  data-fancybox=""
+                  class="parameters__video-rect"
+                >
+                  <img
+                    class="parameters__video-img"
+                    src="@img/admin/widget/video.png"
+                    alt="image"
+                  />
+                  <div class="parameters__video-btn">
+                    <img src="@img/icons/play-white.svg" alt="icon" />
+                  </div>
+                </a>
+                <span class="parameters__video-content"
+                  >смотреть включение 
+                  аппарата</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="discount text-white _winback">
+          <div class="container">
+            <div class="discount__body _center">
+              <img
+              src="@img/discount-winback.jpg"
+              alt=""
+              class="discount__bg _cover"
+            />
+              <div class="discount__info _winback">
+                <h2
+                  class="h4 mb-4 text-white text-center text-lg-start text-uppercase"
+                >
+                  специальное предложение
+                </h2>
+                <div class="discount__content mb-4 _winback">
+                  <p>
+                    Приобретая наш аппарат, вы получаете
+                    <strong>БЕСПЛАТНО</strong> одну из манипул на выбор:
+                    <strong>Tight</strong> или <strong>Convex.</strong>
+                  </p>
+                  <p>Что это значит для вас?</p>
+                </div>
+                <div class="discount__content-min mb-4">
+                  <p>
+                    Манипулы расширяют функционал вашего оборудования, позволяя
+                    проводить:
+                  </p>
+                  <ul>
+                    <li>
+                      Tight(Тай): процедуры для уплотнения и подтяжки кожи,
+                      улучшения тонуса и эластичности.
+                    </li>
+                    <li>
+                      Convex (Конвекс): глубокое воздействие на ткани для
+                      моделирования контуров тела и улучшения обменных процессов.
+                    </li>
+                  </ul>
+                </div>
+                <div class="discount__content _winback">
+                  <p>
+                    <strong>
+                      Выбирайте то, что нужно вашему бизнесу, и радуйте клиентов
+                      новыми возможностями!
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </main>
       @@include('html/footer.html',{}) @@include('html/modal.html',{})
     </div>

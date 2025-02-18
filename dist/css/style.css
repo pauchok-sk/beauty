@@ -23258,6 +23258,14 @@ h6--sm-h4,
     padding-bottom: 60px;
   }
 }
+.instruction._offset-top {
+  padding-top: 80px;
+}
+@media (max-width: 767px) {
+  .instruction._offset-top {
+    padding-top: 60px;
+  }
+}
 .instruction._white {
   background-color: var(--gray-bckg2);
 }
@@ -26290,6 +26298,9 @@ h6--sm-h4,
 }
 .video-about__video .h5 {
   max-width: 255px;
+}
+.video-about__video .h5._big {
+  max-width: 320px;
 }
 .video-about__preview {
   position: absolute;
