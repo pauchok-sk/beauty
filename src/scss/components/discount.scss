@@ -39,6 +39,21 @@
     &._offer {
       padding: 40px 0px 380px 0px;
     }
+    &._clear {
+      background: #00102a;
+      @include small-tablet {
+        text-align: center;
+      }
+      @include mobile {
+        padding-bottom: 360px;
+      }
+
+      .discount__bg {
+        @include mobile {
+          height: 320px;
+        }
+      }
+    }
   }
   &__body {
     position: relative;
@@ -233,6 +248,9 @@
         line-height: 24px;
         letter-spacing: 0.32px;
       }
+    }
+    &._clear {
+      max-width: 555px;
     }
 
     p {

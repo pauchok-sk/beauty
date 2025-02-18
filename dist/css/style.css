@@ -23832,6 +23832,24 @@ h6--sm-h4,
   .discount._offer {
     padding: 40px 0px 380px 0px;
   }
+  .discount._clear {
+    background: #00102a;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  .discount._clear {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  .discount._clear {
+    padding-bottom: 360px;
+  }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  .discount._clear .discount__bg {
+    height: 320px;
+  }
 }
 .discount__body {
   position: relative;
@@ -24064,6 +24082,9 @@ h6--sm-h4,
     line-height: 24px;
     letter-spacing: 0.32px;
   }
+}
+.discount__content._clear {
+  max-width: 555px;
 }
 .discount__content p {
   margin: 0;
