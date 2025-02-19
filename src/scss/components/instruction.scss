@@ -24,6 +24,12 @@
       }
     }
   }
+
+  &._offset-min-mobile {
+    @include mobile {
+      padding: 20px 0px !important;
+    }
+  }
   &__wrapper {
     @include high-tablet {
       flex-direction: column-reverse;

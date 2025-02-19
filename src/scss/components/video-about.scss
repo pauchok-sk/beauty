@@ -138,6 +138,9 @@
 
       .h5 {
         max-width: 360px;
+        @include mobile {
+          font-weight: 500;
+        }
       }
     }
   }

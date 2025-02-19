@@ -247,6 +247,9 @@
 
     .h5 {
       max-width: 290px;
+      @media (max-width: 420px) {
+        font-size: 12px;
+      }
     }
   }
   &__slide-icon {
